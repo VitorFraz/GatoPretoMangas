@@ -1,0 +1,26 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #111;
+}
+
+.carrossel-container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.carrossel {
+    display: flex;
+    transition: transform 0.5s ease; /* Transição suave */
+    width: max-content;
+}
+
+.carrossel img {
+    width: 250px; /* Tamanho fixo das imagens */
+    height: 400px;
+    margin-right: 5px;
+    margin-left: 5px;
+    margin-bottom: 10px;
+}
