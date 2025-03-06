@@ -29,7 +29,7 @@ function moveCarrossel() {
     } else {
         // Movimenta o carrossel de forma suave
         carrossel.style.transition = 'transform 0.5s ease';
-        carrossel.style.transform = `translateX(-${index * 260}px)`; // Move o carrossel para a próxima imagem
+        carrossel.style.transform = `translateX(-${index * 780}px)`; // Move o carrossel para a próxima imagem
     }
 }
 
