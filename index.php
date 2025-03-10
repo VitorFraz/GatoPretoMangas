@@ -1,6 +1,6 @@
 <?php
 
-require '.classes/Mangas.php';
+require './classes/Mangas.php';
 
 $titulo = 'Gato Preto Mangas - Início';
 include './includes/header.php'; 
