@@ -1,7 +1,7 @@
 <?php
 
-class Filmes {
-    function listarFilmesBanco ()
+class Mangas {
+    function listarMangasBanco ()
     {
         //codigo...
         //codigo...
