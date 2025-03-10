@@ -4,14 +4,16 @@ require './classes/Mangas.php';
 
 $titulo = 'Gato Preto Mangas - Início';
 include './includes/header.php'; 
+include './includes/banner.php';
 
 
-$manga = new Mangas();
-$dados = $manga->listarMangaBanco();
+$mangas = new Mangas();
+$dados = $mangas->listarMangaBanco();
 
 echo $dados;
 
 include './includes/manga_lista.php';
+
 include './includes/footer.php'; 
 ?>
 

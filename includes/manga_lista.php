@@ -1,5 +1,5 @@
 <section id="mangas_recomendados">
-        <h2 class="titulo"> Novidades </h2>
+        <h2 class="titulo"> Mangas </h2>
         <main class="container">
             <div class="row">
         
