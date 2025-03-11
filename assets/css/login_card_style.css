@@ -8,7 +8,7 @@ body {
     padding: 0;
     box-sizing: border-box;
     
-    background-image: url('../img/LoginBG.jpg');
+    background-image: url('../img/fundo/loginBG.jpg');
     background-size: cover;
     background-attachment: fixed;
 }
@@ -58,7 +58,6 @@ body {
 }
 
 .card-footer {
-
     display: flex;
     flex-direction: column;
 }
@@ -71,8 +70,9 @@ body {
     font-size: 18px;
     border-radius: 10px;
     border:none;
-    color:#ffffff;
+    color: #e1e1e1;
     margin: 5px;
+    cursor: pointer;
 }
 
 .card-footer label {
