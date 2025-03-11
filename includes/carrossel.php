@@ -11,544 +11,517 @@
 <div class="carrossel-container">
     <div class="carrossel">
         <div class="item">
-            <img src="./assets/img/one_piece.jpg" alt="Img_carrossel01">
+            <img src="./assets/img/carrossel/one_piece.jpg" alt="Img_carrossel01">
         </div>
         <div class="item">
-            <img src="./assets/img/spyxfamily.jpg" alt="Img_carrossel02">
+            <img src="./assets/img/carrossel/spyxfamily.jpg" alt="Img_carrossel02">
         </div>
         <div class="item">
-            <img src="./assets/img/myheroacademia.jpg" alt="Img_carrossel03">
+            <img src="./assets/img/carrossel/myheroacademia.jpg" alt="Img_carrossel03">
         </div>
         <div class="item">
-            <img src="./assets/img/myheroacademia2.jpg" alt="Img_carrossel04">
+            <img src="./assets/img/carrossel/boruto.webp" alt="Img_carrossel05">
         </div>
         <div class="item">
-            <img src="./assets/img/boruto.webp" alt="Img_carrossel05">
+            <img src="./assets/img/carrossel/naruto.jpg" alt="Img_carrossel06">
         </div>
         <div class="item">
-            <img src="./assets/img/naruto.jpg" alt="Img_carrossel06">
+            <img src="./assets/img/carrossel/zetman.jpg" alt="Img_carrossel07">
         </div>
         <div class="item">
-            <img src="./assets/img/zetman.jpg" alt="Img_carrossel07">
+            <img src="./assets/img/carrossel/bank.jpg" alt="Img_carrossel08">
         </div>
         <div class="item">
-            <img src="./assets/img/bank.jpg" alt="Img_carrossel08">
+            <img src="./assets/img/carrossel/Shokugeki_no_Soma.jpg" alt="Img_carrossel09">
         </div>
         <div class="item">
-            <img src="./assets/img/Shokugeki_no_Soma.jpg" alt="Img_carrossel09">
+            <img src="./assets/img/carrossel/fullmetal.jpg" alt="Img_carrossel10">
         </div>
         <div class="item">
-            <img src="./assets/img/fullmetal.jpg" alt="Img_carrossel10">
+            <img src="./assets/img/carrossel/aoexorcist.jpg" alt="Img_carrossel11">
         </div>
         <div class="item">
-            <img src="./assets/img/aoexorcist.jpg" alt="Img_carrossel11">
+            <img src="./assets/img/carrossel/deathnote.jpg" alt="Img_carrossel12">
         </div>
         <div class="item">
-            <img src="./assets/img/deathnote.jpg" alt="Img_carrossel12">
+            <img src="./assets/img/carrossel/blackclover.jpg" alt="Img_carrossel13">
         </div>
         <div class="item">
-            <img src="./assets/img/blackclover.jpg" alt="Img_carrossel13">
+            <img src="./assets/img/carrossel/drstone.jpg" alt="Img_carrossel14">
         </div>
         <div class="item">
-            <img src="./assets/img/drstone.jpg" alt="Img_carrossel14">
+            <img src="./assets/img/carrossel/blacklagoon.jpg" alt="Img_carrossel15">
         </div>
         <div class="item">
-            <img src="./assets/img/blacklagoon.jpg" alt="Img_carrossel15">
+            <img src="./assets/img/carrossel/desconhecido.jpg" alt="Img_carrossel16">
         </div>
         <div class="item">
-            <img src="./assets/img/desconhecido.jpg" alt="Img_carrossel16">
+            <img src="./assets/img/carrossel/Chainsaw_Man.jpg" alt="Img_carrossel17">
         </div>
         <div class="item">
-            <img src="./assets/img/Chainsaw_Man.jpg" alt="Img_carrossel17">
+            <img src="./assets/img/carrossel/mashle.jpg" alt="Img_carrossel18">
         </div>
         <div class="item">
-            <img src="./assets/img/mashle.jpg" alt="Img_carrossel18">
-        </div>
-        <div class="item">
-            <img src="./assets/img/kakegurui.jpg" alt="Img_carrossel19">
+            <img src="./assets/img/carrossel/kakegurui.jpg" alt="Img_carrossel19">
         </div>
 
         <!-- LOOP -->
 
         <div class="item">
-            <img src="./assets/img/one_piece.jpg" alt="Img_carrossel01">
+            <img src="./assets/img/carrossel/one_piece.jpg" alt="Img_carrossel01">
         </div>
         <div class="item">
-            <img src="./assets/img/spyxfamily.jpg" alt="Img_carrossel02">
+            <img src="./assets/img/carrossel/spyxfamily.jpg" alt="Img_carrossel02">
         </div>
         <div class="item">
-            <img src="./assets/img/myheroacademia.jpg" alt="Img_carrossel03">
+            <img src="./assets/img/carrossel/myheroacademia.jpg" alt="Img_carrossel03">
         </div>
         <div class="item">
-            <img src="./assets/img/myheroacademia2.jpg" alt="Img_carrossel04">
+            <img src="./assets/img/carrossel/boruto.webp" alt="Img_carrossel05">
         </div>
         <div class="item">
-            <img src="./assets/img/boruto.webp" alt="Img_carrossel05">
+            <img src="./assets/img/carrossel/naruto.jpg" alt="Img_carrossel06">
         </div>
         <div class="item">
-            <img src="./assets/img/naruto.jpg" alt="Img_carrossel06">
+            <img src="./assets/img/carrossel/zetman.jpg" alt="Img_carrossel07">
         </div>
         <div class="item">
-            <img src="./assets/img/zetman.jpg" alt="Img_carrossel07">
+            <img src="./assets/img/carrossel/bank.jpg" alt="Img_carrossel08">
         </div>
         <div class="item">
-            <img src="./assets/img/bank.jpg" alt="Img_carrossel08">
+            <img src="./assets/img/carrossel/Shokugeki_no_Soma.jpg" alt="Img_carrossel09">
         </div>
         <div class="item">
-            <img src="./assets/img/Shokugeki_no_Soma.jpg" alt="Img_carrossel09">
+            <img src="./assets/img/carrossel/fullmetal.jpg" alt="Img_carrossel10">
         </div>
         <div class="item">
-            <img src="./assets/img/fullmetal.jpg" alt="Img_carrossel10">
+            <img src="./assets/img/carrossel/aoexorcist.jpg" alt="Img_carrossel11">
         </div>
         <div class="item">
-            <img src="./assets/img/aoexorcist.jpg" alt="Img_carrossel11">
+            <img src="./assets/img/carrossel/deathnote.jpg" alt="Img_carrossel12">
         </div>
         <div class="item">
-            <img src="./assets/img/deathnote.jpg" alt="Img_carrossel12">
+            <img src="./assets/img/carrossel/blackclover.jpg" alt="Img_carrossel13">
         </div>
         <div class="item">
-            <img src="./assets/img/blackclover.jpg" alt="Img_carrossel13">
+            <img src="./assets/img/carrossel/drstone.jpg" alt="Img_carrossel14">
         </div>
         <div class="item">
-            <img src="./assets/img/drstone.jpg" alt="Img_carrossel14">
+            <img src="./assets/img/carrossel/blacklagoon.jpg" alt="Img_carrossel15">
         </div>
         <div class="item">
-            <img src="./assets/img/blacklagoon.jpg" alt="Img_carrossel15">
+            <img src="./assets/img/carrossel/desconhecido.jpg" alt="Img_carrossel16">
         </div>
         <div class="item">
-            <img src="./assets/img/desconhecido.jpg" alt="Img_carrossel16">
+            <img src="./assets/img/carrossel/Chainsaw_Man.jpg" alt="Img_carrossel17">
         </div>
         <div class="item">
-            <img src="./assets/img/Chainsaw_Man.jpg" alt="Img_carrossel17">
+            <img src="./assets/img/carrossel/mashle.jpg" alt="Img_carrossel18">
         </div>
         <div class="item">
-            <img src="./assets/img/mashle.jpg" alt="Img_carrossel18">
-        </div>
-        <div class="item">
-            <img src="./assets/img/kakegurui.jpg" alt="Img_carrossel19">
+            <img src="./assets/img/carrossel/kakegurui.jpg" alt="Img_carrossel19">
         </div>
 
         <!-- LOOP -->
 
         <div class="item">
-            <img src="./assets/img/one_piece.jpg" alt="Img_carrossel01">
+            <img src="./assets/img/carrossel/one_piece.jpg" alt="Img_carrossel01">
         </div>
         <div class="item">
-            <img src="./assets/img/spyxfamily.jpg" alt="Img_carrossel02">
+            <img src="./assets/img/carrossel/spyxfamily.jpg" alt="Img_carrossel02">
         </div>
         <div class="item">
-            <img src="./assets/img/myheroacademia.jpg" alt="Img_carrossel03">
+            <img src="./assets/img/carrossel/myheroacademia.jpg" alt="Img_carrossel03">
         </div>
         <div class="item">
-            <img src="./assets/img/myheroacademia2.jpg" alt="Img_carrossel04">
+            <img src="./assets/img/carrossel/boruto.webp" alt="Img_carrossel05">
         </div>
         <div class="item">
-            <img src="./assets/img/boruto.webp" alt="Img_carrossel05">
+            <img src="./assets/img/carrossel/naruto.jpg" alt="Img_carrossel06">
         </div>
         <div class="item">
-            <img src="./assets/img/naruto.jpg" alt="Img_carrossel06">
+            <img src="./assets/img/carrossel/zetman.jpg" alt="Img_carrossel07">
         </div>
         <div class="item">
-            <img src="./assets/img/zetman.jpg" alt="Img_carrossel07">
+            <img src="./assets/img/carrossel/bank.jpg" alt="Img_carrossel08">
         </div>
         <div class="item">
-            <img src="./assets/img/bank.jpg" alt="Img_carrossel08">
+            <img src="./assets/img/carrossel/Shokugeki_no_Soma.jpg" alt="Img_carrossel09">
         </div>
         <div class="item">
-            <img src="./assets/img/Shokugeki_no_Soma.jpg" alt="Img_carrossel09">
+            <img src="./assets/img/carrossel/fullmetal.jpg" alt="Img_carrossel10">
         </div>
         <div class="item">
-            <img src="./assets/img/fullmetal.jpg" alt="Img_carrossel10">
+            <img src="./assets/img/carrossel/aoexorcist.jpg" alt="Img_carrossel11">
         </div>
         <div class="item">
-            <img src="./assets/img/aoexorcist.jpg" alt="Img_carrossel11">
+            <img src="./assets/img/carrossel/deathnote.jpg" alt="Img_carrossel12">
         </div>
         <div class="item">
-            <img src="./assets/img/deathnote.jpg" alt="Img_carrossel12">
+            <img src="./assets/img/carrossel/blackclover.jpg" alt="Img_carrossel13">
         </div>
         <div class="item">
-            <img src="./assets/img/blackclover.jpg" alt="Img_carrossel13">
+            <img src="./assets/img/carrossel/drstone.jpg" alt="Img_carrossel14">
         </div>
         <div class="item">
-            <img src="./assets/img/drstone.jpg" alt="Img_carrossel14">
+            <img src="./assets/img/carrossel/blacklagoon.jpg" alt="Img_carrossel15">
         </div>
         <div class="item">
-            <img src="./assets/img/blacklagoon.jpg" alt="Img_carrossel15">
+            <img src="./assets/img/carrossel/desconhecido.jpg" alt="Img_carrossel16">
         </div>
         <div class="item">
-            <img src="./assets/img/desconhecido.jpg" alt="Img_carrossel16">
+            <img src="./assets/img/carrossel/Chainsaw_Man.jpg" alt="Img_carrossel17">
         </div>
         <div class="item">
-            <img src="./assets/img/Chainsaw_Man.jpg" alt="Img_carrossel17">
+            <img src="./assets/img/carrossel/mashle.jpg" alt="Img_carrossel18">
         </div>
         <div class="item">
-            <img src="./assets/img/mashle.jpg" alt="Img_carrossel18">
-        </div>
-        <div class="item">
-            <img src="./assets/img/kakegurui.jpg" alt="Img_carrossel19">
+            <img src="./assets/img/carrossel/kakegurui.jpg" alt="Img_carrossel19">
         </div>
 
         <!-- LOOP -->
 
         <div class="item">
-            <img src="./assets/img/one_piece.jpg" alt="Img_carrossel01">
+            <img src="./assets/img/carrossel/one_piece.jpg" alt="Img_carrossel01">
         </div>
         <div class="item">
-            <img src="./assets/img/spyxfamily.jpg" alt="Img_carrossel02">
+            <img src="./assets/img/carrossel/spyxfamily.jpg" alt="Img_carrossel02">
         </div>
         <div class="item">
-            <img src="./assets/img/myheroacademia.jpg" alt="Img_carrossel03">
+            <img src="./assets/img/carrossel/myheroacademia.jpg" alt="Img_carrossel03">
         </div>
         <div class="item">
-            <img src="./assets/img/myheroacademia2.jpg" alt="Img_carrossel04">
+            <img src="./assets/img/carrossel/boruto.webp" alt="Img_carrossel05">
         </div>
         <div class="item">
-            <img src="./assets/img/boruto.webp" alt="Img_carrossel05">
+            <img src="./assets/img/carrossel/naruto.jpg" alt="Img_carrossel06">
         </div>
         <div class="item">
-            <img src="./assets/img/naruto.jpg" alt="Img_carrossel06">
+            <img src="./assets/img/carrossel/zetman.jpg" alt="Img_carrossel07">
         </div>
         <div class="item">
-            <img src="./assets/img/zetman.jpg" alt="Img_carrossel07">
+            <img src="./assets/img/carrossel/bank.jpg" alt="Img_carrossel08">
         </div>
         <div class="item">
-            <img src="./assets/img/bank.jpg" alt="Img_carrossel08">
+            <img src="./assets/img/carrossel/Shokugeki_no_Soma.jpg" alt="Img_carrossel09">
         </div>
         <div class="item">
-            <img src="./assets/img/Shokugeki_no_Soma.jpg" alt="Img_carrossel09">
+            <img src="./assets/img/carrossel/fullmetal.jpg" alt="Img_carrossel10">
         </div>
         <div class="item">
-            <img src="./assets/img/fullmetal.jpg" alt="Img_carrossel10">
+            <img src="./assets/img/carrossel/aoexorcist.jpg" alt="Img_carrossel11">
         </div>
         <div class="item">
-            <img src="./assets/img/aoexorcist.jpg" alt="Img_carrossel11">
+            <img src="./assets/img/carrossel/deathnote.jpg" alt="Img_carrossel12">
         </div>
         <div class="item">
-            <img src="./assets/img/deathnote.jpg" alt="Img_carrossel12">
+            <img src="./assets/img/carrossel/blackclover.jpg" alt="Img_carrossel13">
         </div>
         <div class="item">
-            <img src="./assets/img/blackclover.jpg" alt="Img_carrossel13">
+            <img src="./assets/img/carrossel/drstone.jpg" alt="Img_carrossel14">
         </div>
         <div class="item">
-            <img src="./assets/img/drstone.jpg" alt="Img_carrossel14">
+            <img src="./assets/img/carrossel/blacklagoon.jpg" alt="Img_carrossel15">
         </div>
         <div class="item">
-            <img src="./assets/img/blacklagoon.jpg" alt="Img_carrossel15">
+            <img src="./assets/img/carrossel/desconhecido.jpg" alt="Img_carrossel16">
         </div>
         <div class="item">
-            <img src="./assets/img/desconhecido.jpg" alt="Img_carrossel16">
+            <img src="./assets/img/carrossel/Chainsaw_Man.jpg" alt="Img_carrossel17">
         </div>
         <div class="item">
-            <img src="./assets/img/Chainsaw_Man.jpg" alt="Img_carrossel17">
+            <img src="./assets/img/carrossel/mashle.jpg" alt="Img_carrossel18">
         </div>
         <div class="item">
-            <img src="./assets/img/mashle.jpg" alt="Img_carrossel18">
-        </div>
-        <div class="item">
-            <img src="./assets/img/kakegurui.jpg" alt="Img_carrossel19">
+            <img src="./assets/img/carrossel/kakegurui.jpg" alt="Img_carrossel19">
         </div>
 
         <!-- LOOP -->
 
         <div class="item">
-            <img src="./assets/img/one_piece.jpg" alt="Img_carrossel01">
+            <img src="./assets/img/carrossel/one_piece.jpg" alt="Img_carrossel01">
         </div>
         <div class="item">
-            <img src="./assets/img/spyxfamily.jpg" alt="Img_carrossel02">
+            <img src="./assets/img/carrossel/spyxfamily.jpg" alt="Img_carrossel02">
         </div>
         <div class="item">
-            <img src="./assets/img/myheroacademia.jpg" alt="Img_carrossel03">
+            <img src="./assets/img/carrossel/myheroacademia.jpg" alt="Img_carrossel03">
         </div>
         <div class="item">
-            <img src="./assets/img/myheroacademia2.jpg" alt="Img_carrossel04">
+            <img src="./assets/img/carrossel/boruto.webp" alt="Img_carrossel05">
         </div>
         <div class="item">
-            <img src="./assets/img/boruto.webp" alt="Img_carrossel05">
+            <img src="./assets/img/carrossel/naruto.jpg" alt="Img_carrossel06">
         </div>
         <div class="item">
-            <img src="./assets/img/naruto.jpg" alt="Img_carrossel06">
+            <img src="./assets/img/carrossel/zetman.jpg" alt="Img_carrossel07">
         </div>
         <div class="item">
-            <img src="./assets/img/zetman.jpg" alt="Img_carrossel07">
+            <img src="./assets/img/carrossel/bank.jpg" alt="Img_carrossel08">
         </div>
         <div class="item">
-            <img src="./assets/img/bank.jpg" alt="Img_carrossel08">
+            <img src="./assets/img/carrossel/Shokugeki_no_Soma.jpg" alt="Img_carrossel09">
         </div>
         <div class="item">
-            <img src="./assets/img/Shokugeki_no_Soma.jpg" alt="Img_carrossel09">
+            <img src="./assets/img/carrossel/fullmetal.jpg" alt="Img_carrossel10">
         </div>
         <div class="item">
-            <img src="./assets/img/fullmetal.jpg" alt="Img_carrossel10">
+            <img src="./assets/img/carrossel/aoexorcist.jpg" alt="Img_carrossel11">
         </div>
         <div class="item">
-            <img src="./assets/img/aoexorcist.jpg" alt="Img_carrossel11">
+            <img src="./assets/img/carrossel/deathnote.jpg" alt="Img_carrossel12">
         </div>
         <div class="item">
-            <img src="./assets/img/deathnote.jpg" alt="Img_carrossel12">
+            <img src="./assets/img/carrossel/blackclover.jpg" alt="Img_carrossel13">
         </div>
         <div class="item">
-            <img src="./assets/img/blackclover.jpg" alt="Img_carrossel13">
+            <img src="./assets/img/carrossel/drstone.jpg" alt="Img_carrossel14">
         </div>
         <div class="item">
-            <img src="./assets/img/drstone.jpg" alt="Img_carrossel14">
+            <img src="./assets/img/carrossel/blacklagoon.jpg" alt="Img_carrossel15">
         </div>
         <div class="item">
-            <img src="./assets/img/blacklagoon.jpg" alt="Img_carrossel15">
+            <img src="./assets/img/carrossel/desconhecido.jpg" alt="Img_carrossel16">
         </div>
         <div class="item">
-            <img src="./assets/img/desconhecido.jpg" alt="Img_carrossel16">
+            <img src="./assets/img/carrossel/Chainsaw_Man.jpg" alt="Img_carrossel17">
         </div>
         <div class="item">
-            <img src="./assets/img/Chainsaw_Man.jpg" alt="Img_carrossel17">
+            <img src="./assets/img/carrossel/mashle.jpg" alt="Img_carrossel18">
         </div>
         <div class="item">
-            <img src="./assets/img/mashle.jpg" alt="Img_carrossel18">
-        </div>
-        <div class="item">
-            <img src="./assets/img/kakegurui.jpg" alt="Img_carrossel19">
+            <img src="./assets/img/carrossel/kakegurui.jpg" alt="Img_carrossel19">
         </div>
 
         <!-- LOOP -->
 
         <div class="item">
-            <img src="./assets/img/one_piece.jpg" alt="Img_carrossel01">
+            <img src="./assets/img/carrossel/one_piece.jpg" alt="Img_carrossel01">
         </div>
         <div class="item">
-            <img src="./assets/img/spyxfamily.jpg" alt="Img_carrossel02">
+            <img src="./assets/img/carrossel/spyxfamily.jpg" alt="Img_carrossel02">
         </div>
         <div class="item">
-            <img src="./assets/img/myheroacademia.jpg" alt="Img_carrossel03">
+            <img src="./assets/img/carrossel/myheroacademia.jpg" alt="Img_carrossel03">
         </div>
         <div class="item">
-            <img src="./assets/img/myheroacademia2.jpg" alt="Img_carrossel04">
+            <img src="./assets/img/carrossel/boruto.webp" alt="Img_carrossel05">
         </div>
         <div class="item">
-            <img src="./assets/img/boruto.webp" alt="Img_carrossel05">
+            <img src="./assets/img/carrossel/naruto.jpg" alt="Img_carrossel06">
         </div>
         <div class="item">
-            <img src="./assets/img/naruto.jpg" alt="Img_carrossel06">
+            <img src="./assets/img/carrossel/zetman.jpg" alt="Img_carrossel07">
         </div>
         <div class="item">
-            <img src="./assets/img/zetman.jpg" alt="Img_carrossel07">
+            <img src="./assets/img/carrossel/bank.jpg" alt="Img_carrossel08">
         </div>
         <div class="item">
-            <img src="./assets/img/bank.jpg" alt="Img_carrossel08">
+            <img src="./assets/img/carrossel/Shokugeki_no_Soma.jpg" alt="Img_carrossel09">
         </div>
         <div class="item">
-            <img src="./assets/img/Shokugeki_no_Soma.jpg" alt="Img_carrossel09">
+            <img src="./assets/img/carrossel/fullmetal.jpg" alt="Img_carrossel10">
         </div>
         <div class="item">
-            <img src="./assets/img/fullmetal.jpg" alt="Img_carrossel10">
+            <img src="./assets/img/carrossel/aoexorcist.jpg" alt="Img_carrossel11">
         </div>
         <div class="item">
-            <img src="./assets/img/aoexorcist.jpg" alt="Img_carrossel11">
+            <img src="./assets/img/carrossel/deathnote.jpg" alt="Img_carrossel12">
         </div>
         <div class="item">
-            <img src="./assets/img/deathnote.jpg" alt="Img_carrossel12">
+            <img src="./assets/img/carrossel/blackclover.jpg" alt="Img_carrossel13">
         </div>
         <div class="item">
-            <img src="./assets/img/blackclover.jpg" alt="Img_carrossel13">
+            <img src="./assets/img/carrossel/drstone.jpg" alt="Img_carrossel14">
         </div>
         <div class="item">
-            <img src="./assets/img/drstone.jpg" alt="Img_carrossel14">
+            <img src="./assets/img/carrossel/blacklagoon.jpg" alt="Img_carrossel15">
         </div>
         <div class="item">
-            <img src="./assets/img/blacklagoon.jpg" alt="Img_carrossel15">
+            <img src="./assets/img/carrossel/desconhecido.jpg" alt="Img_carrossel16">
         </div>
         <div class="item">
-            <img src="./assets/img/desconhecido.jpg" alt="Img_carrossel16">
+            <img src="./assets/img/carrossel/Chainsaw_Man.jpg" alt="Img_carrossel17">
         </div>
         <div class="item">
-            <img src="./assets/img/Chainsaw_Man.jpg" alt="Img_carrossel17">
+            <img src="./assets/img/carrossel/mashle.jpg" alt="Img_carrossel18">
         </div>
         <div class="item">
-            <img src="./assets/img/mashle.jpg" alt="Img_carrossel18">
-        </div>
-        <div class="item">
-            <img src="./assets/img/kakegurui.jpg" alt="Img_carrossel19">
+            <img src="./assets/img/carrossel/kakegurui.jpg" alt="Img_carrossel19">
         </div>
 
         <!-- LOOP -->
 
         <div class="item">
-            <img src="./assets/img/one_piece.jpg" alt="Img_carrossel01">
+            <img src="./assets/img/carrossel/one_piece.jpg" alt="Img_carrossel01">
         </div>
         <div class="item">
-            <img src="./assets/img/spyxfamily.jpg" alt="Img_carrossel02">
+            <img src="./assets/img/carrossel/spyxfamily.jpg" alt="Img_carrossel02">
         </div>
         <div class="item">
-            <img src="./assets/img/myheroacademia.jpg" alt="Img_carrossel03">
+            <img src="./assets/img/carrossel/myheroacademia.jpg" alt="Img_carrossel03">
         </div>
         <div class="item">
-            <img src="./assets/img/myheroacademia2.jpg" alt="Img_carrossel04">
+            <img src="./assets/img/carrossel/boruto.webp" alt="Img_carrossel05">
         </div>
         <div class="item">
-            <img src="./assets/img/boruto.webp" alt="Img_carrossel05">
+            <img src="./assets/img/carrossel/naruto.jpg" alt="Img_carrossel06">
         </div>
         <div class="item">
-            <img src="./assets/img/naruto.jpg" alt="Img_carrossel06">
+            <img src="./assets/img/carrossel/zetman.jpg" alt="Img_carrossel07">
         </div>
         <div class="item">
-            <img src="./assets/img/zetman.jpg" alt="Img_carrossel07">
+            <img src="./assets/img/carrossel/bank.jpg" alt="Img_carrossel08">
         </div>
         <div class="item">
-            <img src="./assets/img/bank.jpg" alt="Img_carrossel08">
+            <img src="./assets/img/carrossel/Shokugeki_no_Soma.jpg" alt="Img_carrossel09">
         </div>
         <div class="item">
-            <img src="./assets/img/Shokugeki_no_Soma.jpg" alt="Img_carrossel09">
+            <img src="./assets/img/carrossel/fullmetal.jpg" alt="Img_carrossel10">
         </div>
         <div class="item">
-            <img src="./assets/img/fullmetal.jpg" alt="Img_carrossel10">
+            <img src="./assets/img/carrossel/aoexorcist.jpg" alt="Img_carrossel11">
         </div>
         <div class="item">
-            <img src="./assets/img/aoexorcist.jpg" alt="Img_carrossel11">
+            <img src="./assets/img/carrossel/deathnote.jpg" alt="Img_carrossel12">
         </div>
         <div class="item">
-            <img src="./assets/img/deathnote.jpg" alt="Img_carrossel12">
+            <img src="./assets/img/carrossel/blackclover.jpg" alt="Img_carrossel13">
         </div>
         <div class="item">
-            <img src="./assets/img/blackclover.jpg" alt="Img_carrossel13">
+            <img src="./assets/img/carrossel/drstone.jpg" alt="Img_carrossel14">
         </div>
         <div class="item">
-            <img src="./assets/img/drstone.jpg" alt="Img_carrossel14">
+            <img src="./assets/img/carrossel/blacklagoon.jpg" alt="Img_carrossel15">
         </div>
         <div class="item">
-            <img src="./assets/img/blacklagoon.jpg" alt="Img_carrossel15">
+            <img src="./assets/img/carrossel/desconhecido.jpg" alt="Img_carrossel16">
         </div>
         <div class="item">
-            <img src="./assets/img/desconhecido.jpg" alt="Img_carrossel16">
+            <img src="./assets/img/carrossel/Chainsaw_Man.jpg" alt="Img_carrossel17">
         </div>
         <div class="item">
-            <img src="./assets/img/Chainsaw_Man.jpg" alt="Img_carrossel17">
+            <img src="./assets/img/carrossel/mashle.jpg" alt="Img_carrossel18">
         </div>
         <div class="item">
-            <img src="./assets/img/mashle.jpg" alt="Img_carrossel18">
-        </div>
-        <div class="item">
-            <img src="./assets/img/kakegurui.jpg" alt="Img_carrossel19">
+            <img src="./assets/img/carrossel/kakegurui.jpg" alt="Img_carrossel19">
         </div>
 
         <!-- LOOP -->
 
         <div class="item">
-            <img src="./assets/img/one_piece.jpg" alt="Img_carrossel01">
+            <img src="./assets/img/carrossel/one_piece.jpg" alt="Img_carrossel01">
         </div>
         <div class="item">
-            <img src="./assets/img/spyxfamily.jpg" alt="Img_carrossel02">
+            <img src="./assets/img/carrossel/spyxfamily.jpg" alt="Img_carrossel02">
         </div>
         <div class="item">
-            <img src="./assets/img/myheroacademia.jpg" alt="Img_carrossel03">
+            <img src="./assets/img/carrossel/myheroacademia.jpg" alt="Img_carrossel03">
         </div>
         <div class="item">
-            <img src="./assets/img/myheroacademia2.jpg" alt="Img_carrossel04">
+            <img src="./assets/img/carrossel/boruto.webp" alt="Img_carrossel05">
         </div>
         <div class="item">
-            <img src="./assets/img/boruto.webp" alt="Img_carrossel05">
+            <img src="./assets/img/carrossel/naruto.jpg" alt="Img_carrossel06">
         </div>
         <div class="item">
-            <img src="./assets/img/naruto.jpg" alt="Img_carrossel06">
+            <img src="./assets/img/carrossel/zetman.jpg" alt="Img_carrossel07">
         </div>
         <div class="item">
-            <img src="./assets/img/zetman.jpg" alt="Img_carrossel07">
+            <img src="./assets/img/carrossel/bank.jpg" alt="Img_carrossel08">
         </div>
         <div class="item">
-            <img src="./assets/img/bank.jpg" alt="Img_carrossel08">
+            <img src="./assets/img/carrossel/Shokugeki_no_Soma.jpg" alt="Img_carrossel09">
         </div>
         <div class="item">
-            <img src="./assets/img/Shokugeki_no_Soma.jpg" alt="Img_carrossel09">
+            <img src="./assets/img/carrossel/fullmetal.jpg" alt="Img_carrossel10">
         </div>
         <div class="item">
-            <img src="./assets/img/fullmetal.jpg" alt="Img_carrossel10">
+            <img src="./assets/img/carrossel/aoexorcist.jpg" alt="Img_carrossel11">
         </div>
         <div class="item">
-            <img src="./assets/img/aoexorcist.jpg" alt="Img_carrossel11">
+            <img src="./assets/img/carrossel/deathnote.jpg" alt="Img_carrossel12">
         </div>
         <div class="item">
-            <img src="./assets/img/deathnote.jpg" alt="Img_carrossel12">
+            <img src="./assets/img/carrossel/blackclover.jpg" alt="Img_carrossel13">
         </div>
         <div class="item">
-            <img src="./assets/img/blackclover.jpg" alt="Img_carrossel13">
+            <img src="./assets/img/carrossel/drstone.jpg" alt="Img_carrossel14">
         </div>
         <div class="item">
-            <img src="./assets/img/drstone.jpg" alt="Img_carrossel14">
+            <img src="./assets/img/carrossel/blacklagoon.jpg" alt="Img_carrossel15">
         </div>
         <div class="item">
-            <img src="./assets/img/blacklagoon.jpg" alt="Img_carrossel15">
+            <img src="./assets/img/carrossel/desconhecido.jpg" alt="Img_carrossel16">
         </div>
         <div class="item">
-            <img src="./assets/img/desconhecido.jpg" alt="Img_carrossel16">
+            <img src="./assets/img/carrossel/Chainsaw_Man.jpg" alt="Img_carrossel17">
         </div>
         <div class="item">
-            <img src="./assets/img/Chainsaw_Man.jpg" alt="Img_carrossel17">
+            <img src="./assets/img/carrossel/mashle.jpg" alt="Img_carrossel18">
         </div>
         <div class="item">
-            <img src="./assets/img/mashle.jpg" alt="Img_carrossel18">
-        </div>
-        <div class="item">
-            <img src="./assets/img/kakegurui.jpg" alt="Img_carrossel19">
+            <img src="./assets/img/carrossel/kakegurui.jpg" alt="Img_carrossel19">
         </div>
 
         <!-- LOOP -->
 
         <div class="item">
-            <img src="./assets/img/one_piece.jpg" alt="Img_carrossel01">
+            <img src="./assets/img/carrossel/one_piece.jpg" alt="Img_carrossel01">
         </div>
         <div class="item">
-            <img src="./assets/img/spyxfamily.jpg" alt="Img_carrossel02">
+            <img src="./assets/img/carrossel/spyxfamily.jpg" alt="Img_carrossel02">
         </div>
         <div class="item">
-            <img src="./assets/img/myheroacademia.jpg" alt="Img_carrossel03">
+            <img src="./assets/img/carrossel/myheroacademia.jpg" alt="Img_carrossel03">
         </div>
         <div class="item">
-            <img src="./assets/img/myheroacademia2.jpg" alt="Img_carrossel04">
+            <img src="./assets/img/carrossel/boruto.webp" alt="Img_carrossel05">
         </div>
         <div class="item">
-            <img src="./assets/img/boruto.webp" alt="Img_carrossel05">
+            <img src="./assets/img/carrossel/naruto.jpg" alt="Img_carrossel06">
         </div>
         <div class="item">
-            <img src="./assets/img/naruto.jpg" alt="Img_carrossel06">
+            <img src="./assets/img/carrossel/zetman.jpg" alt="Img_carrossel07">
         </div>
         <div class="item">
-            <img src="./assets/img/zetman.jpg" alt="Img_carrossel07">
+            <img src="./assets/img/carrossel/bank.jpg" alt="Img_carrossel08">
         </div>
         <div class="item">
-            <img src="./assets/img/bank.jpg" alt="Img_carrossel08">
+            <img src="./assets/img/carrossel/Shokugeki_no_Soma.jpg" alt="Img_carrossel09">
         </div>
         <div class="item">
-            <img src="./assets/img/Shokugeki_no_Soma.jpg" alt="Img_carrossel09">
+            <img src="./assets/img/carrossel/fullmetal.jpg" alt="Img_carrossel10">
         </div>
         <div class="item">
-            <img src="./assets/img/fullmetal.jpg" alt="Img_carrossel10">
+            <img src="./assets/img/carrossel/aoexorcist.jpg" alt="Img_carrossel11">
         </div>
         <div class="item">
-            <img src="./assets/img/aoexorcist.jpg" alt="Img_carrossel11">
+            <img src="./assets/img/carrossel/deathnote.jpg" alt="Img_carrossel12">
         </div>
         <div class="item">
-            <img src="./assets/img/deathnote.jpg" alt="Img_carrossel12">
+            <img src="./assets/img/carrossel/blackclover.jpg" alt="Img_carrossel13">
         </div>
         <div class="item">
-            <img src="./assets/img/blackclover.jpg" alt="Img_carrossel13">
+            <img src="./assets/img/carrossel/drstone.jpg" alt="Img_carrossel14">
         </div>
         <div class="item">
-            <img src="./assets/img/drstone.jpg" alt="Img_carrossel14">
+            <img src="./assets/img/carrossel/blacklagoon.jpg" alt="Img_carrossel15">
         </div>
         <div class="item">
-            <img src="./assets/img/blacklagoon.jpg" alt="Img_carrossel15">
+            <img src="./assets/img/carrossel/desconhecido.jpg" alt="Img_carrossel16">
         </div>
         <div class="item">
-            <img src="./assets/img/desconhecido.jpg" alt="Img_carrossel16">
+            <img src="./assets/img/carrossel/Chainsaw_Man.jpg" alt="Img_carrossel17">
         </div>
         <div class="item">
-            <img src="./assets/img/Chainsaw_Man.jpg" alt="Img_carrossel17">
+            <img src="./assets/img/carrossel/mashle.jpg" alt="Img_carrossel18">
         </div>
         <div class="item">
-            <img src="./assets/img/mashle.jpg" alt="Img_carrossel18">
-        </div>
-        <div class="item">
-            <img src="./assets/img/kakegurui.jpg" alt="Img_carrossel19">
+            <img src="./assets/img/carrossel/kakegurui.jpg" alt="Img_carrossel19">
         </div>
     </div>
 </div>
-<script src="./assets/js/script.js"></script>
+<script src="./assets/js/carrossel_script.js"></script>
 </body>
 </html>

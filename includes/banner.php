@@ -14,7 +14,7 @@
 
 <body>
     <div class="banner">
-        <img src="./assets/img/overlord.jpg" alt="img_banner01">
-        <img src="./assets/img/vagabund.jpg" alt="img_banner02">
+        <img src="./assets/img/banner/overlord.jpg" alt="img_banner01">
+        <img src="./assets/img/banner/vagabund.jpg" alt="img_banner02">
     </div>
 </body>

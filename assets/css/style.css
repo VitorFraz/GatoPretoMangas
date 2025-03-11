@@ -12,7 +12,7 @@ body {
 
 body { 
     /* para colocar a foto de fundo do site */
-    background-image: url('../img/backiee-298830.jpg');
+    background-image: url('../img/fundo/backiee-298830.jpg');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;

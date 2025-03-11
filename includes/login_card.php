@@ -26,7 +26,7 @@
     <div class="card-footer">
         <input type="submit" value="Entrar" class="submit">
         <label>Esqueceu a senha?</label>
-        <a href="./tela_cadastro.php" class="recuperar_senha">Clique aqui para Cadastrar-se</a>
+        <a href="./tela_cadastro.php" class="retornar_cadastro">Clique aqui para Cadastrar-se</a>
     </div>
 </form>
 </div>
