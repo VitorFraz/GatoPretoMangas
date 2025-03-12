@@ -28,13 +28,17 @@
             <a href="#">Categorias</a>
         </nav>
         <div class="search-container">
-            <input type="text" placeholder="Search">
+            <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <div class="icons">
+                    <a href="#"><i class="bi bi-search"></i></a>
+                </div>
+            </form>
         </div>
 
         <div class="icons">
-            <a href="#"><i class="bi bi-search"></i></a>
             <a href="#"><i class="bi bi-house"></i></a>
-            <a href="#"><i class="bi bi-person"></i></a>
+            <a href="./tela_login.php"><i class="bi bi-person"></i></a>
         </div>
     </div>
 </header>        

@@ -37,7 +37,9 @@
     </div>
     <div class="card-footer">
         <input type="submit" value="Criar Conta" class="submit">
+        <br>
         <label>Ja possui uma conta?</label>
+        <br>
         <a href="./tela_login.php" class="retornar_login">Clique aqui para fazer o Login</a>
     </div>
 </form>
