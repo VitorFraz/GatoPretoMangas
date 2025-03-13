@@ -29,7 +29,7 @@
         </nav>
         <div class="search-container">
             <form class="d-flex" role="search">
-            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <input class="form-control me-2" type="search" placeholder="Pesquisar..." aria-label="Search">
                 <div class="icons">
                     <a href="#"><i class="bi bi-search"></i></a>
                 </div>

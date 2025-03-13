@@ -60,6 +60,10 @@ body {
     text-decoration: none;
 }
 
+.header .icons i {
+    font-size: 1.47em;
+}
+
 
 .gallery {
     display: flex;
