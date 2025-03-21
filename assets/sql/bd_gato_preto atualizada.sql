@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 12/03/2025 às 15:52
+-- Tempo de geração: 21/03/2025 às 15:12
 -- Versão do servidor: 10.4.32-MariaDB
 -- Versão do PHP: 8.0.30
 
@@ -65,56 +65,56 @@ CREATE TABLE `tb_mangas` (
 --
 
 INSERT INTO `tb_mangas` (`id`, `titulo`, `genero`, `ano_de_lancamento`, `status`, `capitulos`, `classificacao_indicativa`, `sinopse`, `autor`, `capas`) VALUES
-(1, 'One Piece', 'shonen', 1997, 'em andamento', 1100, '12+', 'Um jovem pirata busca se tornar o Rei dos Piratas.', 'Eiichiro Oda', ''),
-(2, 'Dragon Ball', 'shonen', 1984, 'concluído', 519, '12+', 'As aventuras de Goku e suas batalhas épicas.', 'Akira Toriyama', ''),
-(3, 'Naruto', 'shonen', 1999, 'concluído', 700, '12+', 'Um jovem ninja sonha em se tornar Hokage.', 'Masashi Kishimoto', ''),
-(4, 'Attack on Titan', 'shonen', 2009, 'concluído', 139, '16+', 'Humanidade luta contra titãs que ameaçam sua existência.', 'Hajime Isayama', ''),
-(5, 'Death Note', 'shonen', 2003, 'concluído', 108, '16+', 'Um estudante encontra um caderno que pode matar pessoas.', 'Tsugumi Ohba', ''),
-(6, 'Bleach', 'shonen', 2001, 'concluído', 686, '14+', 'Um adolescente ganha poderes de Shinigami para proteger sua cidade.', 'Tite Kubo', ''),
-(7, 'Fullmetal Alchemist', 'shonen', 2001, 'concluído', 116, '14+', 'Dois irmãos alquimistas buscam a Pedra Filosofal.', 'Hiromu Arakawa', ''),
-(8, 'Demon Slayer', 'shonen', 2016, 'concluído', 205, '14+', 'Um jovem caçador luta para salvar sua irmã demônio.', 'Koyoharu Gotouge', ''),
-(9, 'Jujutsu Kaisen', 'shonen', 2018, 'em andamento', 250, '16+', 'Um estudante luta contra maldições com técnicas de feitiçaria.', 'Gege Akutami', ''),
-(10, 'Hunter x Hunter', 'shonen', 1998, 'em andamento', 400, '14+', 'Um garoto busca seu pai e se torna um caçador.', 'Yoshihiro Togashi', ''),
-(11, 'My Hero Academia', 'shonen', 2014, 'em andamento', 410, '12+', 'Estudantes treinam para se tornarem super-heróis.', 'Kohei Horikoshi', ''),
-(12, 'One Punch Man', 'seinen', 2009, 'em andamento', 200, '16+', 'Um herói que derrota qualquer inimigo com um soco.', 'ONE, Yusuke Murata', ''),
-(13, 'Tokyo Revengers', 'shonen', 2017, 'concluído', 278, '16+', 'Um jovem viaja no tempo para salvar sua ex-namorada.', 'Ken Wakui', ''),
-(14, 'JoJo’s Bizarre Adventure', 'shonen', 1987, 'em andamento', 950, '16+', 'Gerações de heróis combatem forças sobrenaturais.', 'Hirohiko Araki', ''),
-(15, 'Fairy Tail', 'shonen', 2006, 'concluído', 545, '14+', 'Magos de uma guilda embarcam em aventuras épicas.', 'Hiro Mashima', ''),
-(16, 'Chainsaw Man', 'shonen', 2018, 'em andamento', 150, '16+', 'Um jovem caçador de demônios com poderes de motosserra.', 'Tatsuki Fujimoto', ''),
-(17, 'Slam Dunk', 'shonen', 1990, 'concluído', 276, '12+', 'Um estudante descobre sua paixão pelo basquete.', 'Takehiko Inoue', ''),
-(18, 'Haikyuu!!', 'shonen', 2012, 'concluído', 402, '12+', 'Jogadores de vôlei superam desafios para chegar ao topo.', 'Haruichi Furudate', ''),
-(19, 'Neon Genesis Evangelion', 'seinen', 1994, 'concluído', 97, '16+', 'Adolescentes pilotam mechas contra criaturas apocalípticas.', 'Yoshiyuki Sadamoto', ''),
-(20, 'Rurouni Kenshin', 'shonen', 1994, 'concluído', 255, '14+', 'Um ex-assassino tenta viver uma vida pacífica no Japão feudal.', 'Nobuhiro Watsuki', ''),
-(21, 'Yu Yu Hakusho', 'shonen', 1990, 'concluído', 175, '14+', 'Um jovem que morre salvando uma criança ganha uma segunda chance como detetive espiritual.', 'Yoshihiro Togashi', ''),
-(22, 'Berserk', 'seinen', 1989, 'em andamento', 364, '18+', 'A sombria jornada de Guts, um mercenário amaldiçoado, em busca de vingança contra seu ex-amigo.', 'Kentaro Miura', ''),
-(23, 'Vagabond', 'seinen', 1998, 'hiato', 327, '18+', 'A história do lendário samurai Miyamoto Musashi.', 'Takehiko Inoue', ''),
-(24, 'Tokyo Ghoul', 'seinen', 2011, 'concluído', 143, '16+', 'Um jovem se torna meio-ghoul após um acidente e luta para encontrar seu lugar na sociedade.', 'Sui Ishida', ''),
-(25, 'Parasyte (Kiseijuu)', 'seinen', 1988, 'concluído', 64, '16+', 'Parasitas alienígenas invadem corpos humanos, e um jovem luta para sobreviver após um deles falhar em dominá-lo completamente.', 'Hitoshi Iwaaki', ''),
-(26, 'Vinland Saga', 'seinen', 2005, 'em andamento', 200, '16+', 'A saga de um jovem viking em busca de vingança.', 'Makoto Yukimura', ''),
-(27, 'The Promised Neverland (Yakusoku no Neverland)', 'shonen', 2016, 'concluído', 181, '14+', 'Crianças descobrem a verdade sombria sobre o orfanato onde vivem e tentam escapar.', 'Kaiu Shirai', ''),
-(28, 'Black Clover', 'shonen', 2015, 'em andamento', 370, '12+', 'Um jovem sem magia busca se tornar o Rei Mago.', 'Yūki Tabata', ''),
-(29, 'Akira', 'seinen', 1982, 'concluído', 120, '16+', 'Um jovem motociclista se envolve em uma conspiração governamental sobre poderes psíquicos.', 'Katsuhiro Otomo', ''),
-(30, 'Inuyasha', 'shonen', 1996, 'concluído', 558, '12+', 'Uma garota viaja no tempo e se junta a um meio-youkai para encontrar a Joia de Quatro Almas.', 'Rumiko Takahashi', ''),
-(31, 'Sailor Moon', 'shoujo', 1991, 'concluído', 60, '10+', 'Uma jovem descobre ser uma guerreira mágica destinada a salvar o mundo.', 'Naoko Takeuchi', ''),
-(32, 'Cardcaptor Sakura', 'shoujo', 1996, 'concluído', 70, '10+', 'Uma garota descobre cartas mágicas e precisa capturá-las para evitar o caos.', 'CLAMP', ''),
-(33, 'Ouran High School Host Club', 'shoujo', 2002, 'concluído', 83, '12+', 'Uma garota se disfarça de garoto e se junta a um clube de anfitriões de elite.', 'Bisco Hatori', ''),
-(34, 'Fruits Basket', 'shoujo', 1998, 'concluído', 136, '12+', 'Uma garota órfã descobre que uma família sofre uma maldição ligada ao zodíaco chinês.', 'Natsuki Takaya', ''),
-(35, 'Nana', 'shoujo', 2000, 'hiato', 84, '16+', 'Duas garotas chamadas Nana têm suas vidas entrelaçadas pelo destino e pela música.', 'Ai Yazawa', ''),
-(36, 'Love Hina', 'shonen', 1998, 'concluído', 123, '14+', 'Um jovem tenta entrar na Universidade de Tóquio enquanto gerencia uma pensão feminina.', 'Ken Akamatsu', ''),
-(37, 'Rosario + Vampire', 'shonen', 2004, 'concluído', 66, '14+', 'Um garoto humano entra por engano em uma escola para monstros e conhece uma vampira.', 'Akihisa Ikeda', ''),
-(38, 'Mirai Nikki (Future Diary)', 'shonen', 2006, 'concluído', 59, '16+', 'Um jogo mortal entre pessoas que possuem diários que preveem o futuro.', 'Sakae Esuno', ''),
-(39, 'Black Butler (Kuroshitsuji)', 'shonen', 2006, 'em andamento', 200, '16+', 'Um jovem nobre faz um pacto com um mordomo demoníaco para vingar seus pais.', 'Yana Toboso', ''),
-(40, 'D.Gray-man', 'shonen', 2004, 'hiato', 240, '14+', 'Exorcistas lutam contra demônios criados por um misterioso Conde.', 'Katsura Hoshino', ''),
-(41, 'Soul Eater', 'shonen', 2004, 'concluído', 113, '14+', 'Estudantes de uma escola especial treinam para se tornarem caçadores de almas malignas.', 'Atsushi Ōkubo', ''),
-(42, 'Toriko', 'shonen', 2008, 'concluído', 396, '14+', 'Um caçador de ingredientes raros busca criar o prato perfeito.', 'Mitsutoshi Shimabukuro', ''),
-(43, 'Gantz', 'seinen', 2000, 'concluído', 383, '18+', 'Pessoas mortas são revividas para lutar contra alienígenas.', 'Hiroya Oku', ''),
-(44, 'Great Teacher Onizuka (GTO)', 'shonen', 1997, 'concluído', 201, '16+', 'Um ex-delinquente se torna professor para mudar a vida de seus alunos.', 'Tooru Fujisawa', ''),
-(45, 'Monster', 'seinen', 1994, 'concluído', 162, '16+', 'Um neurocirurgião persegue um assassino em série que ele salvou.', 'Naoki Urasawa', ''),
-(46, '20th Century Boys', 'seinen', 1999, 'concluído', 249, '16+', 'Amigos de infância tentam impedir uma seita que ameaça o mundo.', 'Naoki Urasawa', ''),
-(47, 'Made in Abyss', 'seinen', 2012, 'em andamento', 66, '16+', 'Uma garota e um robô exploram um abismo misterioso e perigoso.', 'Akihito Tsukushi', ''),
-(48, 'Re:Zero', 'shonen', 2014, 'em andamento', 75, '16+', 'Um jovem é transportado para um mundo de fantasia e revive após morrer.', 'Tappei Nagatsuki', ''),
-(49, 'Sword Art Online', 'shonen', 2009, 'em andamento', 100, '14+', 'Jogadores ficam presos em um jogo de realidade virtual mortal.', 'Reki Kawahara', ''),
-(50, 'Dr. Stone', 'shonen', 2017, 'concluído', 232, '12+', 'Um jovem gênio tenta reconstruir a civilização após um evento petrificador.', 'Riichiro Inagaki', ''),
+(1, 'One Piece', 'shonen', 1997, 'em andamento', 1100, '12+', 'Um jovem pirata busca se tornar o Rei dos Piratas.', 'Eiichiro Oda', '1 One_piece.jpg'),
+(2, 'Dragon Ball', 'shonen', 1984, 'concluído', 519, '12+', 'As aventuras de Goku e suas batalhas épicas.', 'Akira Toriyama', '2dragon_ball.jpg'),
+(3, 'Naruto', 'shonen', 1999, 'concluído', 700, '12+', 'Um jovem ninja sonha em se tornar Hokage.', 'Masashi Kishimoto', '3naruto_classico.jpg'),
+(4, 'Attack on Titan', 'shonen', 2009, 'concluído', 139, '16+', 'Humanidade luta contra titãs que ameaçam sua existência.', 'Hajime Isayama', '4 Shingeki no Kyojin'),
+(5, 'Death Note', 'shonen', 2003, 'concluído', 108, '16+', 'Um estudante encontra um caderno que pode matar pessoas.', 'Tsugumi Ohba', '5 death note'),
+(6, 'Bleach', 'shonen', 2001, 'concluído', 686, '14+', 'Um adolescente ganha poderes de Shinigami para proteger sua cidade.', 'Tite Kubo', '6 bleach'),
+(7, 'Fullmetal Alchemist', 'shonen', 2001, 'concluído', 116, '14+', 'Dois irmãos alquimistas buscam a Pedra Filosofal.', 'Hiromu Arakawa', '7 fullmetal alchemist'),
+(8, 'Demon Slayer', 'shonen', 2016, 'concluído', 205, '14+', 'Um jovem caçador luta para salvar sua irmã demônio.', 'Koyoharu Gotouge', '8 demon slayer'),
+(9, 'Jujutsu Kaisen', 'shonen', 2018, 'em andamento', 250, '16+', 'Um estudante luta contra maldições com técnicas de feitiçaria.', 'Gege Akutami', '9 jujutsu kaisen'),
+(10, 'Hunter x Hunter', 'shonen', 1998, 'em andamento', 400, '14+', 'Um garoto busca seu pai e se torna um caçador.', 'Yoshihiro Togashi', '10 hunterxhunter'),
+(11, 'My Hero Academia', 'shonen', 2014, 'em andamento', 410, '12+', 'Estudantes treinam para se tornarem super-heróis.', 'Kohei Horikoshi', '11 myheroacademia'),
+(12, 'One Punch Man', 'seinen', 2009, 'em andamento', 200, '16+', 'Um herói que derrota qualquer inimigo com um soco.', 'ONE, Yusuke Murata', '12 one punch man'),
+(13, 'Tokyo Revengers', 'shonen', 2017, 'concluído', 278, '16+', 'Um jovem viaja no tempo para salvar sua ex-namorada.', 'Ken Wakui', '13 tokyorevenger'),
+(14, 'JoJo’s Bizarre Adventure', 'shonen', 1987, 'em andamento', 950, '16+', 'Gerações de heróis combatem forças sobrenaturais.', 'Hirohiko Araki', '14 JoJo’s Bizarre Adventure'),
+(15, 'Fairy Tail', 'shonen', 2006, 'concluído', 545, '14+', 'Magos de uma guilda embarcam em aventuras épicas.', 'Hiro Mashima', '15 Fairy Tail'),
+(16, 'Chainsaw Man', 'shonen', 2018, 'em andamento', 150, '16+', 'Um jovem caçador de demônios com poderes de motosserra.', 'Tatsuki Fujimoto', '16 Chainsaw Man'),
+(17, 'Slam Dunk', 'shonen', 1990, 'concluído', 276, '12+', 'Um estudante descobre sua paixão pelo basquete.', 'Takehiko Inoue', '17 slam dunk'),
+(18, 'Haikyuu!!', 'shonen', 2012, 'concluído', 402, '12+', 'Jogadores de vôlei superam desafios para chegar ao topo.', 'Haruichi Furudate', '18 haikyuu'),
+(19, 'Neon Genesis Evangelion', 'seinen', 1994, 'concluído', 97, '16+', 'Adolescentes pilotam mechas contra criaturas apocalípticas.', 'Yoshiyuki Sadamoto', '19 Neon Genesis Evangelion'),
+(20, 'Rurouni Kenshin', 'shonen', 1994, 'concluído', 255, '14+', 'Um ex-assassino tenta viver uma vida pacífica no Japão feudal.', 'Nobuhiro Watsuki', '20 Rurouni Kenshin'),
+(21, 'Yu Yu Hakusho', 'shonen', 1990, 'concluído', 175, '14+', 'Um jovem que morre salvando uma criança ganha uma segunda chance como detetive espiritual.', 'Yoshihiro Togashi', '21 Yu Yu Hakusho'),
+(22, 'Berserk', 'seinen', 1989, 'em andamento', 364, '18+', 'A sombria jornada de Guts, um mercenário amaldiçoado, em busca de vingança contra seu ex-amigo.', 'Kentaro Miura', '22 Berserk'),
+(23, 'Vagabond', 'seinen', 1998, 'hiato', 327, '18+', 'A história do lendário samurai Miyamoto Musashi.', 'Takehiko Inoue', '23 Vagabond'),
+(24, 'Tokyo Ghoul', 'seinen', 2011, 'concluído', 143, '16+', 'Um jovem se torna meio-ghoul após um acidente e luta para encontrar seu lugar na sociedade.', 'Sui Ishida', '24 Tokyo Ghoul'),
+(25, 'Parasyte (Kiseijuu)', 'seinen', 1988, 'concluído', 64, '16+', 'Parasitas alienígenas invadem corpos humanos, e um jovem luta para sobreviver após um deles falhar em dominá-lo completamente.', 'Hitoshi Iwaaki', '25 Kiseijuu'),
+(26, 'Vinland Saga', 'seinen', 2005, 'em andamento', 200, '16+', 'A saga de um jovem viking em busca de vingança.', 'Makoto Yukimura', '26 vinland saga'),
+(27, 'The Promised Neverland (Yakusoku no Neverland)', 'shonen', 2016, 'concluído', 181, '14+', 'Crianças descobrem a verdade sombria sobre o orfanato onde vivem e tentam escapar.', 'Kaiu Shirai', '27 Yakusoku no Neverland'),
+(28, 'Black Clover', 'shonen', 2015, 'em andamento', 370, '12+', 'Um jovem sem magia busca se tornar o Rei Mago.', 'Yūki Tabata', '28 Black Clover'),
+(29, 'Akira', 'seinen', 1982, 'concluído', 120, '16+', 'Um jovem motociclista se envolve em uma conspiração governamental sobre poderes psíquicos.', 'Katsuhiro Otomo', '29 Akira'),
+(30, 'Inuyasha', 'shonen', 1996, 'concluído', 558, '12+', 'Uma garota viaja no tempo e se junta a um meio-youkai para encontrar a Joia de Quatro Almas.', 'Rumiko Takahashi', '30 Inuyasha'),
+(31, 'Sailor Moon', 'shoujo', 1991, 'concluído', 60, '10+', 'Uma jovem descobre ser uma guerreira mágica destinada a salvar o mundo.', 'Naoko Takeuchi', '31 Sailor Moon'),
+(32, 'Cardcaptor Sakura', 'shoujo', 1996, 'concluído', 70, '10+', 'Uma garota descobre cartas mágicas e precisa capturá-las para evitar o caos.', 'CLAMP', '32 Cardcaptor Sakura'),
+(33, 'Ouran High School Host Club', 'shoujo', 2002, 'concluído', 83, '12+', 'Uma garota se disfarça de garoto e se junta a um clube de anfitriões de elite.', 'Bisco Hatori', '33 Ouran High School Host Club'),
+(34, 'Fruits Basket', 'shoujo', 1998, 'concluído', 136, '12+', 'Uma garota órfã descobre que uma família sofre uma maldição ligada ao zodíaco chinês.', 'Natsuki Takaya', '34 Fruits Basket'),
+(35, 'Nana', 'shoujo', 2000, 'hiato', 84, '16+', 'Duas garotas chamadas Nana têm suas vidas entrelaçadas pelo destino e pela música.', 'Ai Yazawa', '35 Nana'),
+(36, 'Love Hina', 'shonen', 1998, 'concluído', 123, '14+', 'Um jovem tenta entrar na Universidade de Tóquio enquanto gerencia uma pensão feminina.', 'Ken Akamatsu', '36 Love Hina'),
+(37, 'Rosario + Vampire', 'shonen', 2004, 'concluído', 66, '14+', 'Um garoto humano entra por engano em uma escola para monstros e conhece uma vampira.', 'Akihisa Ikeda', '37 Rosario + Vampire'),
+(38, 'Mirai Nikki (Future Diary)', 'shonen', 2006, 'concluído', 59, '16+', 'Um jogo mortal entre pessoas que possuem diários que preveem o futuro.', 'Sakae Esuno', '38 Mirai Nikki'),
+(39, 'Black Butler (Kuroshitsuji)', 'shonen', 2006, 'em andamento', 200, '16+', 'Um jovem nobre faz um pacto com um mordomo demoníaco para vingar seus pais.', 'Yana Toboso', '39 Kuroshitsuji'),
+(40, 'D.Gray-man', 'shonen', 2004, 'hiato', 240, '14+', 'Exorcistas lutam contra demônios criados por um misterioso Conde.', 'Katsura Hoshino', '40 D.Gray-man'),
+(41, 'Soul Eater', 'shonen', 2004, 'concluído', 113, '14+', 'Estudantes de uma escola especial treinam para se tornarem caçadores de almas malignas.', 'Atsushi Ōkubo', '41 Soul Eater'),
+(42, 'Toriko', 'shonen', 2008, 'concluído', 396, '14+', 'Um caçador de ingredientes raros busca criar o prato perfeito.', 'Mitsutoshi Shimabukuro', '42 Toriko'),
+(43, 'Gantz', 'seinen', 2000, 'concluído', 383, '18+', 'Pessoas mortas são revividas para lutar contra alienígenas.', 'Hiroya Oku', '43 Gantz'),
+(44, 'Great Teacher Onizuka (GTO)', 'shonen', 1997, 'concluído', 201, '16+', 'Um ex-delinquente se torna professor para mudar a vida de seus alunos.', 'Tooru Fujisawa', '44 Great Teacher'),
+(45, 'Monster', 'seinen', 1994, 'concluído', 162, '16+', 'Um neurocirurgião persegue um assassino em série que ele salvou.', 'Naoki Urasawa', '45 Monster'),
+(46, '20th Century Boys', 'seinen', 1999, 'concluído', 249, '16+', 'Amigos de infância tentam impedir uma seita que ameaça o mundo.', 'Naoki Urasawa', '46 20th century boys'),
+(47, 'Made in Abyss', 'seinen', 2012, 'em andamento', 66, '16+', 'Uma garota e um robô exploram um abismo misterioso e perigoso.', 'Akihito Tsukushi', '47 Made in Abyss'),
+(48, 'Re:Zero', 'shonen', 2014, 'em andamento', 75, '16+', 'Um jovem é transportado para um mundo de fantasia e revive após morrer.', 'Tappei Nagatsuki', '48 Re zero'),
+(49, 'Sword Art Online', 'shonen', 2009, 'em andamento', 100, '14+', 'Jogadores ficam presos em um jogo de realidade virtual mortal.', 'Reki Kawahara', '49 Sword Art Online'),
+(50, 'Dr. Stone', 'shonen', 2017, 'concluído', 232, '12+', 'Um jovem gênio tenta reconstruir a civilização após um evento petrificador.', 'Riichiro Inagaki', '50 Dr stone'),
 (51, 'Noragami', 'shonen', 2010, 'em andamento', 100, '14+', 'Um deus menor busca ganhar reconhecimento ajudando humanos.', 'Adachitoka', ''),
 (52, 'Hellsing', 'seinen', 1997, 'concluído', 92, '18+', 'Uma organização secreta luta contra vampiros e criaturas sobrenaturais.', 'Kouta Hirano', ''),
 (53, 'Deadman Wonderland', 'shonen', 2007, 'concluído', 58, '16+', 'Um garoto é preso injustamente e forçado a lutar em jogos mortais.', 'Jinsei Kataoka', ''),
@@ -165,6 +165,23 @@ INSERT INTO `tb_mangas` (`id`, `titulo`, `genero`, `ano_de_lancamento`, `status`
 (98, 'Real', 'seinen', 1999, 'em andamento', 90, '16+', 'Três jovens lidam com seus desafios pessoais através do basquete em cadeira de rodas.', 'Takehiko Inoue', ''),
 (99, 'Ping Pong', 'seinen', 1996, 'concluído', 55, '12+', 'Dois amigos se desafiam e crescem juntos no mundo do tênis de mesa.', 'Taiyo Matsumoto', '');
 
+-- --------------------------------------------------------
+
+--
+-- Estrutura para tabela `tb_usuario`
+--
+
+CREATE TABLE `tb_usuario` (
+  `id` int(11) NOT NULL,
+  `email` varchar(255) NOT NULL,
+  `senha` varchar(255) NOT NULL,
+  `favoritos` varchar(255) NOT NULL,
+  `historico` varchar(255) NOT NULL,
+  `avaliacao` int(11) NOT NULL,
+  `foto` blob NOT NULL,
+  `id_cliente` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
 --
 -- Índices para tabelas despejadas
 --
@@ -184,6 +201,12 @@ ALTER TABLE `tb_mangas`
   ADD PRIMARY KEY (`id`);
 
 --
+-- Índices de tabela `tb_usuario`
+--
+ALTER TABLE `tb_usuario`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- AUTO_INCREMENT para tabelas despejadas
 --
 
@@ -198,6 +221,12 @@ ALTER TABLE `clientes`
 --
 ALTER TABLE `tb_mangas`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=100;
+
+--
+-- AUTO_INCREMENT de tabela `tb_usuario`
+--
+ALTER TABLE `tb_usuario`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
