@@ -16,29 +16,29 @@
 
 <body>
     <header>
-    <div class="header">
-        <div class="logo">
-            <img src="./assets/img/possivellogo.jpg" alt="Logo">
-            <span>Gato Preto Mangás</span>
-        </div>
-        <nav>
-            <a href="#">Novidades</a>
-            <a href="#">Popular</a>
-            <a href="#">Favoritos</a>
-            <a href="#">Categorias</a>
-        </nav>
-        <div class="search-container">
-            <form class="d-flex" role="search">
-            <input class="form-control me-2" type="search" placeholder="Pesquisar..." aria-label="Search">
+        <div class="header">
+            <div class="logo">
+                <img src="./assets/img/possivellogo.jpg" alt="Logo">
+                <span>Gato Preto Mangás</span>
+            </div>
+            <nav>
+                <a href="#">Novidades</a>
+                <a href="#">Popular</a>
+                <a href="#">Favoritos</a>
+                <a href="#">Categorias</a>
+            </nav>
+            <div class="search-container">
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Pesquisar..." aria-label="Search">
                 <div class="icons">
-                    <a href="#"><i class="bi bi-search"></i></a>
+                    <a href="./listarmangas.php"><i class="bi bi-search"></i></a>
                 </div>
-            </form>
-        </div>
+                </form>
+            </div>
 
-        <div class="icons">
-            <a href="#"><i class="bi bi-house"></i></a>
-            <a href="./tela_login.php"><i class="bi bi-person"></i></a>
+            <div class="icons">
+                <a href="./tela_inicial"><i class="bi bi-house"></i></a>
+                <a href="./tela_login.php"><i class="bi bi-person"></i></a>
+            </div>
         </div>
-    </div>
-</header>        
+    </header>
