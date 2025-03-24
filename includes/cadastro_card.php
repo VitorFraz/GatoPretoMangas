@@ -41,6 +41,7 @@
         <label>Ja possui uma conta?</label>
         <br>
         <a href="./tela_login.php" class="retornar_login">Clique aqui para fazer o Login</a>
+        <a href="./tela_pagamento.php" class="ver_planos">Ver Planos de Assinatura</a>
     </div>
 </form>
 </div>

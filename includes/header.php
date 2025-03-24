@@ -37,7 +37,7 @@
             </div>
 
             <div class="icons">
-                <a href="./tela_inicial"><i class="bi bi-house"></i></a>
+                <a href="./tela_inicial.php"><i class="bi bi-house"></i></a>
                 <a href="./tela_login.php"><i class="bi bi-person"></i></a>
             </div>
         </div>
