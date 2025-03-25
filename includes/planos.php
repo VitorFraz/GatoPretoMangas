@@ -17,8 +17,8 @@
     <div class="card-content">
         <div class="card-content-area">
             <img alt="planoA.png" src="./assets/img/planos_card/plano_A.png">  
-            <img alt="planoA.png" src="./assets/img/planos_card/plano_A.png">
-            <img alt="planoA.png" src="./assets/img/planos_card/plano_A.png">
+            <img alt="planoB.png" src="./assets/img/planos_card/plano_B.png">
+            <img alt="planoC.png" src="./assets/img/planos_card/plano_C.png">
         </div>
     </div>
 </form>
