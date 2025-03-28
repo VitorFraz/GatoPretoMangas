@@ -16,9 +16,26 @@
     </div>
     <div class="card-content">
         <div class="card-content-area">
-            <img alt="planoA.png" src="./assets/img/planos_card/plano_A.png">  
-            <img alt="planoB.png" src="./assets/img/planos_card/plano_B.png">
-            <img alt="planoC.png" src="./assets/img/planos_card/plano_C.png">
+            <figure class="plano_card">            
+                <img alt="planoB.png" src="./assets/img/planos_card/plano_A.png">
+                <figcaption>
+                    <h3>🐈Gato Branco🐈</h3>
+                    <p> - O plano basico e economico, acesso a todos os nossos mangas disponívies</p>
+                    <span><strong> R$10,00 <br> por Mês.</strong></span>
+                </figcaption>
+            </figure>
+            <figure class="plano_card">
+                <img alt="planoA.png" src="./assets/img/planos_card/plano_B.png">
+                <figcaption>
+                    <h3>🐈‍⬛Gato Preto🐈‍⬛</h3>
+                </figcaption>            
+            </figure>
+            <figure class="plano_card">
+                <img alt="planoC.png" src="./assets/img/planos_card/plano_C.png">
+                <figcaption>
+                    <h3>⭐Gato Cosmico⭐</h3>
+                </figcaption>
+            </figure>
         </div>
     </div>
 </form>
