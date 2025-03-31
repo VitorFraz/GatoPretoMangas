@@ -16,18 +16,19 @@
     </div>
     <div class="card-content">
         <div class="card-content-area">
-            <figure class="plano_card">            
-                <img alt="planoB.png" src="./assets/img/planos_card/plano_A.png">
+            <figure class="plano_card">
+                <img alt="planoA.png" src="./assets/img/planos_card/plano_A.png">
                 <figcaption>
                     <h3>🐈Gato Branco🐈</h3>
                     <p> - O plano basico e economico, acesso a todos os nossos mangas disponívies</p>
-                    <span><strong> R$10,00 <br> por Mês.</strong></span>
+                    <span><strong> R$20,00 <br> por Mês.</strong></span>
                 </figcaption>
             </figure>
             <figure class="plano_card">
-                <img alt="planoA.png" src="./assets/img/planos_card/plano_B.png">
+                <img alt="planoB.png" src="./assets/img/planos_card/plano_B.png">
                 <figcaption>
                     <h3>🐈‍⬛Gato Preto🐈‍⬛</h3>
+                    <p> - O plano padrão, acesso </p>
                 </figcaption>            
             </figure>
             <figure class="plano_card">

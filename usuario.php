@@ -6,8 +6,8 @@ include './includes/header.php';
 <section id="usuario-principal">
     <main class="container usuario-principal">
         <?php
-        include_once './includes/user_header.php';
-        include_once './includes/user_lista_manga.php';
+        include './includes/user_header.php';
+        include './includes/user_lista_manga.php';
 
         ?>
     </main>
