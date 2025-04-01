@@ -7,12 +7,12 @@ include './includes/header.php';
 include './includes/banner.php';
 
 
-$mangas = new Mangas();
-$dados = $mangas->listarMangaBanco();
+// $mangas = new Mangas();
+// $dados = $mangas->listarMangaBanco();
 
-echo $dados;
+// echo $dados;
 
-include './includes/manga_lista.php';
+// include './includes/manga_lista.php';
 
 include './includes/footer.php'; 
 ?>

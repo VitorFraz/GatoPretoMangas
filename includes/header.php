@@ -18,8 +18,10 @@
     <header>
         <div class="header">
             <div class="logo">
-                <img src="./assets/img/possivellogo.jpg" alt="Logo">
-                <span>Gato Preto Mangás</span>
+                <a href="./tela_inicial.php">
+                    <img src="./assets/img/possivellogo.jpg" alt="Logo">
+                    <span>Gato Preto Mangás</span>
+                </a>
             </div>
             <nav>
                 <a href="#">Novidades</a>
@@ -37,7 +39,6 @@
             </div>
 
             <div class="icons">
-                <a href="./tela_inicial.php"><i class="bi bi-house"></i></a>
                 <a href="./tela_login.php"><i class="bi bi-person"></i></a>
             </div>
         </div>

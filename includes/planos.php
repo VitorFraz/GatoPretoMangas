@@ -20,21 +20,24 @@
                 <img alt="planoA.png" src="./assets/img/planos_card/plano_A.png">
                 <figcaption>
                     <h3>🐈Gato Branco🐈</h3>
-                    <p> - O plano basico e economico, acesso a todos os nossos mangas disponívies</p>
-                    <span><strong> R$20,00 <br> por Mês.</strong></span>
+                    <p> - O plano basico e economico, acesso a quase todos os nossos mangás disponíveis</p>
+                    <span><strong> R$50,00 <br> por Mês.</strong></span>
                 </figcaption>
             </figure>
             <figure class="plano_card">
                 <img alt="planoB.png" src="./assets/img/planos_card/plano_B.png">
                 <figcaption>
                     <h3>🐈‍⬛Gato Preto🐈‍⬛</h3>
-                    <p> - O plano padrão, acesso </p>
+                    <p> - O plano padrão, acesso a todos os nossos mangás e lançamentos </p>
+                    <span><strong> R$75,00 <br> por Mês.</strong></span>
                 </figcaption>            
             </figure>
             <figure class="plano_card">
                 <img alt="planoC.png" src="./assets/img/planos_card/plano_C.png">
                 <figcaption>
                     <h3>⭐Gato Cosmico⭐</h3>
+                    <p> - O plano Premium, acesso antecipado e exclusivo de lançamentos novos</p>
+                    <span><strong>R$100,00 <br> por Mês.</strong></span>
                 </figcaption>
             </figure>
         </div>

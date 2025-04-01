@@ -6,19 +6,19 @@
                 <h5 class="font-weight-bold">MENU</h5>
                 <ul class="list-unstyled mt-3">
                     <li><a href="./index.php">Inicio</a></li>
-                    <li><a href="./index.php#filmes">Mangás</a></li>
-                    <li><a href="./sobre.php">Lançamentos</a></li>
-                    <li><a href="./sobre.php">Data de estreia</a></li>
+                    <li><a href="./index.php">Mangás</a></li>
+                    <li><a href="./index.php">Lançamentos</a></li>
+                    <li><a href="./index.php">Data de estreia</a></li>
                 </ul>
             </div>
 
             <div class="col-md-3">
                 <h5 class="font-weight-bold">Redes Sociais</h5>
                 <ul class="list-unstyled  mt-3">
-                    <li><a href="./sobre.php">Facebook</a></li>
-                    <li><a href="./contato.php">Instagram</a></li>
-                    <li><a href="./contato.php">X</a></li>
-                    <li><a href="./contato.php">Youtube</a></li>
+                    <li><a target="_blank" href="https://www.facebook.com/?locale=pt_BR">Facebook</a></li>
+                    <li><a target="_blank" href="https://www.instagram.com/">Instagram</a></li>
+                    <li><a target="_blank" href="https://x.com/?lang=pt">X</a></li>
+                    <li><a target="_blank" href="https://www.youtube.com/">Youtube</a></li>
                 </ul>
             </div>
 
@@ -26,19 +26,18 @@
                 <h5 class="font-weight-bold">Contate-nos</h5>
 
                 <ul class="col-md-6 list-unstyled  mt-3">
-                    <li><a target="_blank" href="#">Sobre</a></li>
-                    <li><a target="_blank" href="#">Centro de Ajuda </a></li>
-                    <li><a target="_blank" href="#">Política de Privacidade</a></li>
+                    <li><a href="sobre.php">Sobre</a></li>
+                    <li><a href="#">Centro de Ajuda </a></li>
+                    <li><a href="./politic.html">Política de Privacidade</a></li>
                 </ul>
 
             </div>
             <div class="col-md-3">
                 <h5 class="font-weight-bold">Descubra Mais</h5>
                 <ul class="col-md-6 list-unstyled  mt-3">
-                    <li><a target="_blank" href="#">Login</a></li>
-                    <li><a target="_blank" href="#">Criar Conta</a></li>
-                    <li><a target="_blank" href="#">Começar Teste Gratuíto</a></li>
-                    <li><a target="_blank" href="#">Parceiros</a></li>
+                    <li><a href="./tela_login.php">Login</a></li>
+                    <li><a href="./tela_cadastro.php">Criar Conta</a></li>
+                    <li><a href="./tela_parceiros.php">Parceiros</a></li>
                 </ul>
             </div>
         </div>
