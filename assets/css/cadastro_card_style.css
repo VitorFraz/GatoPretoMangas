@@ -21,7 +21,7 @@ body {
 }
 
 .card {
-    background-color: rgba(252, 255, 254, 0.7);
+    background-color: rgba(224, 224, 224, 0.7);
     padding: 25px;
     border-radius: 20px;
     width:280px;
@@ -71,18 +71,17 @@ body {
     border-radius: 10px;
     border:none;
     color:#000c1c;
-    margin: 5px;
     cursor: pointer;
 }
 
 .card-footer label {
     text-align: center;
-    font-size: 20px;
+    font-size: 21px;
 }
 
 .card-footer a {
-    color: #98a4ff;
-    font-size: 15px;
+    color: #626bb4;
+    font-size: 17px;
     text-align: center;
     text-decoration: none;
 }

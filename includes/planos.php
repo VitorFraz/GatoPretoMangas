@@ -3,8 +3,8 @@
 <head>
     <meta charset="PT-BR">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <link rel="stylesheet" href="./assets/css/planos_style.css">
+
     <title>Planos de Assinatura</title>
 </head>
 <body>
@@ -21,7 +21,7 @@
                 <figcaption>
                     <h3>🐈Gato Branco🐈</h3>
                     <p> - O plano basico e economico, acesso a quase todos os nossos mangás disponíveis</p>
-                    <span><strong> R$50,00 <br> por Mês.</strong></span>
+                    <span><strong> R$20,00 <br> por Mês.</strong></span>
                 </figcaption>
             </figure>
             <figure class="plano_card">
@@ -29,7 +29,7 @@
                 <figcaption>
                     <h3>🐈‍⬛Gato Preto🐈‍⬛</h3>
                     <p> - O plano padrão, acesso a todos os nossos mangás e lançamentos </p>
-                    <span><strong> R$75,00 <br> por Mês.</strong></span>
+                    <span><strong> R$35,00 <br> por Mês.</strong></span>
                 </figcaption>            
             </figure>
             <figure class="plano_card">
@@ -37,7 +37,7 @@
                 <figcaption>
                     <h3>⭐Gato Cosmico⭐</h3>
                     <p> - O plano Premium, acesso antecipado e exclusivo de lançamentos novos</p>
-                    <span><strong>R$100,00 <br> por Mês.</strong></span>
+                    <span><strong>R$75,00 <br> por Mês.</strong></span>
                 </figcaption>
             </figure>
         </div>

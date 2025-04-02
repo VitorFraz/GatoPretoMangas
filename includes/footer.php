@@ -38,6 +38,7 @@
                     <li><a href="./tela_login.php">Login</a></li>
                     <li><a href="./tela_cadastro.php">Criar Conta</a></li>
                     <li><a href="./tela_parceiros.php">Parceiros</a></li>
+                    <li><a href="./tela_pagamento.php">Planos de Assinatura</a></li>
                 </ul>
             </div>
         </div>
