@@ -31,7 +31,7 @@
                 <input type="submit" value="Entrar" class="submit">
                 <br>
                 <label>Esqueceu a senha?</label>
-                <a href="./index.php" class="recuperar_senha">Recuperar Senha</a>
+                <a href="./tela_rec_senha.php" class="recuperar_senha">Recuperar Senha</a>
                 <br>
                 <label>Não possui uma conta?</label>
                 <a href="./tela_cadastro.php" class="retornar_cadastro">Clique aqui para Cadastrar-se</a>

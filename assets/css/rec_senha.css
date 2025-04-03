@@ -1,0 +1,66 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    font-family: "Roboto", sans-serif;
+    background-size: cover;
+    background-image: url('../img/fundo/RecSenhaBG.jpg');
+    background-attachment: fixed;
+}
+
+#recSenha {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card {
+    margin-top: 110px;
+    background-color:rgba(255, 255, 255, 0.75);
+    padding: 25px;
+    border-radius: 20px;
+    width: 300px;
+}
+
+.card-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-content {
+    font-size: 20px;
+}
+
+.card-content-area {
+    display: flex;
+    flex-direction: column;
+    padding:10px;
+    margin-bottom: 30px;
+}
+
+.card-content-area input {
+    font-size: 20px;
+    background-color: transparent;
+    border:none;
+    border-bottom: 1px solid #000c1c;
+    outline: none;
+    color: #000c1c;
+}
+
+.card-footer {
+    display: flex;
+}
+
+.card-footer .submit{
+    font-weight: 800;
+    margin: auto;
+    width: 150px;
+    height: 55px;
+    background-color: #607a3d;
+    font-size: 18px;
+    border-radius: 10px;
+    border:none;
+    cursor: pointer;
+    color:aliceblue;
+}

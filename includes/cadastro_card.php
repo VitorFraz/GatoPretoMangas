@@ -24,7 +24,7 @@
                 <div class="card-content-area">
                     <label for="telephone">Telefone</label>
                     <input type="text" id="telefone" name="telefone" oninput="aplicarMascaraTelefone(event)" onblur="validatelefone()" > <!--"(XX) XXXXX-XXXX" -->
-                    <span id="mensagem-erro-telefone"></span>
+                    <span id="mensagem-erro-telefone"></span> <!-- "(XX)XXXXX-XXXX" -->
                 </div>
                 <div class="card-content-area">
                     <label for="password">CPF</label>

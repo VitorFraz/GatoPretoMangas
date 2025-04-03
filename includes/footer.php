@@ -27,7 +27,6 @@
 
                 <ul class="col-md-6 list-unstyled  mt-3">
                     <li><a href="sobre.php">Sobre</a></li>
-                    <li><a href="#">Centro de Ajuda </a></li>
                     <li><a href="./politic.html">Política de Privacidade</a></li>
                 </ul>
 
