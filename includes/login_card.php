@@ -24,7 +24,7 @@
                 <div class="card-content-area">
                     <label for="senha">Senha</label>
                     <input type="password" id="senha" name="senha" onblur="validaSenha()">
-                    <span id="erro-senha"></span>
+                    <span id="mensagem-erro-senha"></span>
                 </div>
             </div>
             <div class="card-footer">
