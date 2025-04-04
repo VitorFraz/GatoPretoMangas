@@ -24,10 +24,10 @@
                 </a>
             </div>
             <nav>
-                <a href="#">Novidades</a>
-                <a href="#">Popular</a>
-                <a href="#">Favoritos</a>
-                <a href="#">Categorias</a>
+                <a href="index.php">Novidades</a>
+                <a href="index.php">Popular</a>
+                <a href="index.php">Favoritos</a>
+                <a href="index.php">Categorias</a>
             </nav>
             <div class="search-container">
                 <form class="d-flex" role="search">
