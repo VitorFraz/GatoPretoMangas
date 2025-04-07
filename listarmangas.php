@@ -7,9 +7,9 @@ $titulo = 'Gato Preto - Mangás';
 include'./includes/header.php';
 
 $manga = new Mangas();
-$dadosMangas = $Filme->exibirListarMangas();
+$dadosMangas = $manga->exibirListarMangas();
 $generos = new Generos();
-$dadosGeneros = $genero->consultarListaGeneros();
+$dadosGeneros = $generos->consultarListaGeneros();
 
 include'./includes/manga_lista.php';
 include'./includes/footer.php';
