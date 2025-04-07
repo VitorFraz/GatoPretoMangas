@@ -6,10 +6,11 @@ $titulo = 'Gato Preto Mangas - Início';
 include './includes/header.php'; 
 // include './includes/banner.php';
 
-// $mangas = new Mangas();
-// $dados = $mangas->listarMangaBanco();
+ $mangas = new Mangas();
+$dadosMangas = $mangas->exibirListarMangas(24);
 
-// echo $dados;
+$genero = new Generos();
+
 
 include './includes/manga_lista.php';
 
