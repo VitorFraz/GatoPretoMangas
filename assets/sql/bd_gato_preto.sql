@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 21/03/2025 às 15:12
+-- Tempo de geração: 07-Abr-2025 às 05:10
 -- Versão do servidor: 10.4.32-MariaDB
--- Versão do PHP: 8.0.30
+-- versão do PHP: 8.2.12
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -24,12 +24,120 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Estrutura para tabela `clientes`
+-- Estrutura da tabela `tb_autores`
 --
 
-CREATE TABLE `clientes` (
+CREATE TABLE `tb_autores` (
   `id` int(11) NOT NULL,
-  `nomeCompleto` varchar(200) NOT NULL,
+  `nome` varchar(100) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Extraindo dados da tabela `tb_autores`
+--
+
+INSERT INTO `tb_autores` (`id`, `nome`) VALUES
+(1, 'Eiichiro Oda'),
+(2, 'Akira Toriyama'),
+(3, 'Masashi Kishimoto'),
+(4, 'Hajime Isayama'),
+(5, 'Tsugumi Ohba'),
+(6, 'Tite Kubo'),
+(7, 'Hiromu Arakawa'),
+(8, 'Koyoharu Gotouge'),
+(9, 'Gege Akutami'),
+(10, 'Yoshihiro Togashi'),
+(11, 'Kohei Horikoshi'),
+(12, 'ONE, Yusuke Murata'),
+(13, 'Ken Wakui'),
+(14, 'Hirohiko Araki'),
+(15, 'Hiro Mashima'),
+(16, 'Tatsuki Fujimoto'),
+(17, 'Takehiko Inoue'),
+(18, 'Haruichi Furudate'),
+(19, 'Yoshiyuki Sadamoto'),
+(20, 'Nobuhiro Watsuki'),
+(21, 'Kentaro Miura'),
+(22, 'Sui Ishida'),
+(23, 'Hitoshi Iwaaki'),
+(24, 'Makoto Yukimura'),
+(25, 'Kaiu Shirai'),
+(26, 'Yūki Tabata'),
+(27, 'Katsuhiro Otomo'),
+(28, 'Rumiko Takahashi'),
+(29, 'Naoko Takeuchi'),
+(30, 'CLAMP'),
+(31, 'Bisco Hatori'),
+(32, 'Natsuki Takaya'),
+(33, 'Ai Yazawa'),
+(34, 'Ken Akamatsu'),
+(35, 'Akihisa Ikeda'),
+(36, 'Sakae Esuno'),
+(37, 'Yana Toboso'),
+(38, 'Katsura Hoshino'),
+(39, 'Atsushi Ōkubo'),
+(40, 'Mitsutoshi Shimabukuro'),
+(41, 'Hiroya Oku'),
+(42, 'Tooru Fujisawa'),
+(43, 'Naoki Urasawa'),
+(44, 'Akihito Tsukushi'),
+(45, 'Tappei Nagatsuki'),
+(46, 'Reki Kawahara'),
+(47, 'Riichiro Inagaki'),
+(48, 'Adachitoka'),
+(49, 'Kouta Hirano'),
+(50, 'Jinsei Kataoka'),
+(51, 'Hiroyuki Takei'),
+(52, 'Yasuhiro Nightow'),
+(53, 'Lynn Okamoto'),
+(54, 'Jun Mochizuki'),
+(55, 'Tsubasa Yamaguchi'),
+(56, 'Yuki Amemiya'),
+(57, 'Yoshiki Nakamura'),
+(58, 'Io Sakisaka'),
+(59, 'Ichigo Takano'),
+(60, 'HERO'),
+(61, 'Robico'),
+(62, 'Satsuki Yoshino'),
+(63, 'Yumi Unita'),
+(64, 'Keiichi Arawi'),
+(65, 'Kiyohiko Azuma'),
+(66, 'Konami Kanata'),
+(67, 'Yuki Midorikawa'),
+(68, 'Yuki Urushibara'),
+(69, 'Keiichi Sigsawa'),
+(70, 'Yako Gureishi'),
+(71, 'Haruko Ichikawa'),
+(72, 'Tsutomu Nihei'),
+(73, 'Q Hayashida'),
+(74, 'Gamon Sakurai'),
+(75, 'Nami Sano'),
+(76, 'Hikaru Nakamura'),
+(77, 'Kōji Kumeta'),
+(78, 'Kiminori Wakasugi'),
+(79, 'Natsumi Eguchi'),
+(80, 'Kousuke Oono'),
+(81, 'Masaki Segawa'),
+(82, 'Yellow Tanabe'),
+(83, 'Ryu Fujisaki'),
+(84, 'Oh! great'),
+(85, 'Harold Sakuishi'),
+(86, 'Ryuta Amazume'),
+(87, 'Takahiro'),
+(88, 'Kei Sanbe'),
+(89, 'Tatsuhiko Takimoto'),
+(90, 'Hiroki Endo'),
+(91, 'Inio Asano');
+
+-- --------------------------------------------------------
+
+--
+-- Estrutura da tabela `tb_clientes`
+--
+
+CREATE TABLE `tb_clientes` (
+  `id` int(11) NOT NULL,
+  `nome` varchar(200) NOT NULL,
   `dataNascimento` date DEFAULT NULL,
   `email` varchar(150) NOT NULL,
   `telefone` varchar(15) DEFAULT NULL,
@@ -38,13 +146,54 @@ CREATE TABLE `clientes` (
   `estado` varchar(50) DEFAULT NULL,
   `cep` varchar(10) DEFAULT NULL,
   `pais` varchar(50) DEFAULT NULL,
-  `cpf` varchar(11) NOT NULL
+  `cpf` varchar(11) NOT NULL,
+  `senha` varchar(255) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 -- --------------------------------------------------------
 
 --
--- Estrutura para tabela `tb_mangas`
+-- Estrutura da tabela `tb_generos`
+--
+
+CREATE TABLE `tb_generos` (
+  `id` int(11) NOT NULL,
+  `nome` varchar(50) NOT NULL,
+  `classificacao_etaria` varchar(10) NOT NULL,
+  `cor` varchar(7) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Extraindo dados da tabela `tb_generos`
+--
+
+INSERT INTO `tb_generos` (`id`, `nome`, `classificacao_etaria`, `cor`) VALUES
+(1, 'Shonen', '+14', '#FFFF00'),
+(2, 'Shounen Ai', '+16', '#FF0000'),
+(3, 'Shojo', '+14', '#FFFF00'),
+(4, 'Shoujo Ai', '+16', '#FF0000'),
+(5, 'Yaoi', '+18', '#000000'),
+(6, 'Isekai', '+16', '#FF0000'),
+(7, 'Kodomomuke', 'Livre', '#00FF00'),
+(8, 'Slice of Life', '+14', '#FFFF00'),
+(9, 'Seinen', '+16', '#FF0000'),
+(10, 'Mecha', '+14', '#FFFF00'),
+(11, 'Josei', '+16', '#FF0000'),
+(12, 'Yuri', '+18', '#000000'),
+(13, 'Iyashikei', 'Livre', '#00FF00'),
+(14, 'Idol', '+14', '#FFFF00'),
+(15, 'Ecchi', '+18', '#000000'),
+(16, 'Harem', '+16', '#FF0000'),
+(17, 'Reverse Harem', '+16', '#FF0000'),
+(18, 'Youkai', '+16', '#FF0000'),
+(19, 'Doujinshi', '+18', '#000000'),
+(20, 'One Shot', '+14', '#FFFF00'),
+(21, 'Hentai', '+18', '#000000');
+
+-- --------------------------------------------------------
+
+--
+-- Estrutura da tabela `tb_mangas`
 --
 
 CREATE TABLE `tb_mangas` (
@@ -61,7 +210,7 @@ CREATE TABLE `tb_mangas` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
--- Despejando dados para a tabela `tb_mangas`
+-- Extraindo dados da tabela `tb_mangas`
 --
 
 INSERT INTO `tb_mangas` (`id`, `titulo`, `genero`, `ano_de_lancamento`, `status`, `capitulos`, `classificacao_indicativa`, `sinopse`, `autor`, `capas`) VALUES
@@ -168,7 +317,241 @@ INSERT INTO `tb_mangas` (`id`, `titulo`, `genero`, `ano_de_lancamento`, `status`
 -- --------------------------------------------------------
 
 --
--- Estrutura para tabela `tb_usuario`
+-- Estrutura da tabela `tb_manga_autor`
+--
+
+CREATE TABLE `tb_manga_autor` (
+  `id` int(11) NOT NULL,
+  `manga_id` int(11) NOT NULL,
+  `autor_id` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Extraindo dados da tabela `tb_manga_autor`
+--
+
+INSERT INTO `tb_manga_autor` (`id`, `manga_id`, `autor_id`) VALUES
+(1, 1, 1),
+(2, 2, 2),
+(3, 3, 3),
+(4, 4, 4),
+(5, 5, 5),
+(6, 6, 6),
+(7, 7, 7),
+(8, 8, 8),
+(9, 9, 9),
+(10, 10, 10),
+(11, 11, 11),
+(12, 12, 12),
+(13, 13, 13),
+(14, 14, 14),
+(15, 15, 15),
+(16, 16, 16),
+(17, 17, 17),
+(18, 18, 18),
+(19, 19, 19),
+(20, 20, 20),
+(21, 21, 10),
+(22, 22, 21),
+(23, 23, 17),
+(24, 24, 22),
+(25, 25, 23),
+(26, 26, 24),
+(27, 27, 25),
+(28, 28, 26),
+(29, 29, 27),
+(30, 30, 28),
+(31, 31, 29),
+(32, 32, 30),
+(33, 33, 31),
+(34, 34, 32),
+(35, 35, 33),
+(36, 36, 34),
+(37, 37, 35),
+(38, 38, 36),
+(39, 39, 37),
+(40, 40, 38),
+(41, 41, 39),
+(42, 42, 40),
+(43, 43, 41),
+(44, 44, 42),
+(45, 45, 43),
+(46, 46, 43),
+(47, 47, 44),
+(48, 48, 45),
+(49, 49, 46),
+(50, 50, 47),
+(51, 51, 48),
+(52, 52, 49),
+(53, 53, 50),
+(54, 54, 51),
+(55, 55, 52),
+(56, 56, 53),
+(57, 57, 54),
+(58, 58, 55),
+(59, 59, 56),
+(60, 60, 57),
+(61, 61, 58),
+(62, 62, 59),
+(63, 63, 60),
+(64, 64, 61),
+(65, 65, 62),
+(66, 66, 63),
+(67, 67, 64),
+(68, 68, 65),
+(69, 69, 65),
+(70, 70, 66),
+(71, 71, 67),
+(72, 72, 68),
+(73, 73, 69),
+(74, 74, 70),
+(75, 75, 71),
+(76, 76, 72),
+(77, 77, 72),
+(78, 78, 72),
+(79, 79, 73),
+(80, 80, 74),
+(81, 81, 75),
+(82, 82, 76),
+(83, 83, 77),
+(84, 84, 78),
+(85, 85, 79),
+(86, 86, 80),
+(87, 87, 81),
+(88, 88, 82),
+(89, 89, 83),
+(90, 90, 84),
+(91, 91, 85),
+(92, 92, 86),
+(93, 93, 87),
+(94, 94, 88),
+(95, 95, 89),
+(96, 96, 90),
+(97, 97, 91),
+(98, 98, 17),
+(99, 99, 17);
+
+-- --------------------------------------------------------
+
+--
+-- Estrutura da tabela `tb_manga_genero`
+--
+
+CREATE TABLE `tb_manga_genero` (
+  `id` int(11) NOT NULL,
+  `id_manga` int(11) DEFAULT NULL,
+  `id_genero` int(11) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Extraindo dados da tabela `tb_manga_genero`
+--
+
+INSERT INTO `tb_manga_genero` (`id`, `id_manga`, `id_genero`) VALUES
+(1, 1, 1),
+(2, 2, 1),
+(3, 3, 1),
+(4, 4, 9),
+(5, 5, 9),
+(6, 6, 1),
+(7, 7, 1),
+(8, 8, 1),
+(9, 9, 1),
+(10, 10, 1),
+(11, 11, 1),
+(12, 12, 9),
+(13, 13, 1),
+(14, 14, 1),
+(15, 15, 1),
+(16, 16, 1),
+(17, 17, 1),
+(18, 18, 1),
+(19, 19, 9),
+(20, 20, 1),
+(21, 21, 1),
+(22, 22, 9),
+(23, 23, 9),
+(24, 24, 9),
+(25, 25, 9),
+(26, 26, 9),
+(27, 27, 1),
+(28, 28, 1),
+(29, 29, 9),
+(30, 30, 1),
+(31, 31, 3),
+(32, 32, 3),
+(33, 33, 3),
+(34, 34, 3),
+(35, 35, 3),
+(36, 36, 1),
+(37, 37, 15),
+(38, 38, 1),
+(39, 39, 15),
+(40, 40, 1),
+(41, 41, 1),
+(42, 42, 1),
+(43, 43, 9),
+(44, 44, 1),
+(45, 45, 9),
+(46, 46, 9),
+(47, 47, 9),
+(48, 48, 6),
+(49, 49, 1),
+(50, 50, 1),
+(51, 51, 1),
+(52, 52, 9),
+(53, 53, 1),
+(54, 54, 1),
+(55, 55, 9),
+(56, 56, 9),
+(57, 57, 1),
+(58, 58, 9),
+(59, 59, 3),
+(60, 60, 3),
+(61, 61, 3),
+(62, 62, 3),
+(63, 63, 8),
+(64, 64, 3),
+(65, 65, 8),
+(66, 66, 11),
+(67, 67, 8),
+(68, 68, 8),
+(69, 69, 8),
+(70, 70, 7),
+(71, 71, 3),
+(72, 72, 9),
+(73, 73, 9),
+(74, 74, 9),
+(75, 75, 9),
+(76, 76, 9),
+(77, 77, 9),
+(78, 78, 9),
+(79, 79, 9),
+(80, 80, 9),
+(81, 81, 9),
+(82, 82, 9),
+(83, 83, 9),
+(84, 84, 9),
+(85, 85, 9),
+(86, 86, 9),
+(87, 87, 9),
+(88, 88, 1),
+(89, 89, 1),
+(90, 90, 1),
+(91, 91, 1),
+(92, 92, 9),
+(93, 93, 15),
+(94, 94, 9),
+(95, 95, 9),
+(96, 96, 9),
+(97, 97, 9),
+(98, 98, 9),
+(99, 99, 9);
+
+-- --------------------------------------------------------
+
+--
+-- Estrutura da tabela `tb_usuario`
 --
 
 CREATE TABLE `tb_usuario` (
@@ -187,39 +570,79 @@ CREATE TABLE `tb_usuario` (
 --
 
 --
--- Índices de tabela `clientes`
+-- Índices para tabela `tb_autores`
 --
-ALTER TABLE `clientes`
+ALTER TABLE `tb_autores`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Índices para tabela `tb_clientes`
+--
+ALTER TABLE `tb_clientes`
   ADD PRIMARY KEY (`id`),
   ADD UNIQUE KEY `email` (`email`),
   ADD UNIQUE KEY `cpf` (`cpf`) USING BTREE;
 
 --
--- Índices de tabela `tb_mangas`
+-- Índices para tabela `tb_generos`
+--
+ALTER TABLE `tb_generos`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Índices para tabela `tb_mangas`
 --
 ALTER TABLE `tb_mangas`
   ADD PRIMARY KEY (`id`);
 
 --
--- Índices de tabela `tb_usuario`
+-- Índices para tabela `tb_manga_autor`
+--
+ALTER TABLE `tb_manga_autor`
+  ADD PRIMARY KEY (`id`),
+  ADD UNIQUE KEY `manga_id` (`manga_id`,`autor_id`),
+  ADD KEY `autor_id` (`autor_id`);
+
+--
+-- Índices para tabela `tb_manga_genero`
+--
+ALTER TABLE `tb_manga_genero`
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `id_manga` (`id_manga`),
+  ADD KEY `id_genero` (`id_genero`);
+
+--
+-- Índices para tabela `tb_usuario`
 --
 ALTER TABLE `tb_usuario`
   ADD PRIMARY KEY (`id`);
 
 --
--- AUTO_INCREMENT para tabelas despejadas
+-- AUTO_INCREMENT de tabelas despejadas
 --
 
 --
--- AUTO_INCREMENT de tabela `clientes`
+-- AUTO_INCREMENT de tabela `tb_autores`
 --
-ALTER TABLE `clientes`
+ALTER TABLE `tb_autores`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=92;
+
+--
+-- AUTO_INCREMENT de tabela `tb_clientes`
+--
+ALTER TABLE `tb_clientes`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT de tabela `tb_mangas`
+-- AUTO_INCREMENT de tabela `tb_manga_autor`
 --
-ALTER TABLE `tb_mangas`
+ALTER TABLE `tb_manga_autor`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=100;
+
+--
+-- AUTO_INCREMENT de tabela `tb_manga_genero`
+--
+ALTER TABLE `tb_manga_genero`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=100;
 
 --
@@ -227,6 +650,24 @@ ALTER TABLE `tb_mangas`
 --
 ALTER TABLE `tb_usuario`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+
+--
+-- Restrições para despejos de tabelas
+--
+
+--
+-- Limitadores para a tabela `tb_manga_autor`
+--
+ALTER TABLE `tb_manga_autor`
+  ADD CONSTRAINT `tb_manga_autor_ibfk_1` FOREIGN KEY (`manga_id`) REFERENCES `tb_mangas` (`id`),
+  ADD CONSTRAINT `tb_manga_autor_ibfk_2` FOREIGN KEY (`autor_id`) REFERENCES `tb_autores` (`id`);
+
+--
+-- Limitadores para a tabela `tb_manga_genero`
+--
+ALTER TABLE `tb_manga_genero`
+  ADD CONSTRAINT `tb_manga_genero_ibfk_1` FOREIGN KEY (`id_manga`) REFERENCES `tb_mangas` (`id`),
+  ADD CONSTRAINT `tb_manga_genero_ibfk_2` FOREIGN KEY (`id_genero`) REFERENCES `tb_generos` (`id`);
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
