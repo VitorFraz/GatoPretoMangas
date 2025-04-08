@@ -10,9 +10,9 @@ if (isset($_GET['id']) && !empty($_GET['id'])) {
     $generos = new Generos();
 
     $dados = $filmes->consultarMangasById($_GET['id']);
-    //$dadosGeneros = $generos->consultarGeneroByIdFilme($_GET['id']);
+    $dadosGeneros = $generos->consultarGeneroByIdManga($_GET['id']);
 
-   // include './includes/filmes_detalhe.php';
+    include './includes/mangas_detalhe.php';
 } else {
     header('location:index.php');
 }

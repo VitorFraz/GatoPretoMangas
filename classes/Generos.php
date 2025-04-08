@@ -22,7 +22,7 @@ class Generos
     public function consultarGeneroByIdManga($id_manga) {
         $script = "SELECT * FROM tb_generos 
                   INNER JOIN tb_manga_genero 
-                  ON tb_manga_genero.genero_id = tb_generos.id 
+                  ON tb_manga_genero.id_genero = tb_generos.id 
                   WHERE tb_manga_genero.id_manga = {$id_manga}";
 
         return $this->conexaoBanco->query($script)->fetchAll();
