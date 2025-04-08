@@ -5,10 +5,10 @@
             <div class="col-md-3">
                 <h5 class="font-weight-bold">MENU</h5>
                 <ul class="list-unstyled mt-3">
-                    <li><a href="./index.php">Inicio</a></li>
-                    <li><a href="./index.php">Mangás</a></li>
-                    <li><a href="./index.php">Lançamentos</a></li>
-                    <li><a href="./index.php">Data de estreia</a></li>
+                    <li><a href="./tela_inicial.php">Inicio</a></li>
+                    <li><a href="./listarmangas.php">Mangás</a></li>
+                    <li><a href="./listarmangas.php">Lançamentos</a></li>
+                    <li><a href="./listarmangas.php">Data de estreia</a></li>
                 </ul>
             </div>
 

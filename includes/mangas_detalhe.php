@@ -20,8 +20,9 @@
 
                 <form action="" method="post">
                     <input type="hidden" name="id_produto" value="<?= $dados['id'] ?>">
+                    <button class="btn btn-warning" type="submit"><i class="bi bi-stars"></i> Adicionar aos Favoritos </button>
 
-                    <button class="btn btn-success" type="submit"><i class="bi bi-journal-text"></i> Comecar Leitura</button>
+                    <button class="btn btn-success" type="submit"><i class="bi bi-journal-text"></i> Comecar a ler</button>
                 </form>
 
                 <div class="sobre-filme">

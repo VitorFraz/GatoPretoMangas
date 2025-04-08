@@ -36,12 +36,12 @@
                 <a href="listarmangas.php">Mangas</a>
             </nav>
             <div class="search-container">
-                <form class="d-flex" role="search">
+                <!-- <form class="d-flex" role="search">
                     <input class="form-control me-2" type="search" placeholder="Pesquisar..." aria-label="Search">
                 <div class="icons">
                     <a href="./listarmangas.php"><i class="bi bi-search"></i></a>
                 </div>
-                </form>
+                </form> -->
             </div>
 
             <div class="icons">
