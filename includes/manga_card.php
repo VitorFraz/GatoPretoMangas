@@ -4,7 +4,8 @@
 
     <figure>
         <a href="mangas-consultar.php?id=<?= $value['id'] ?>">
-        <img src="./assets/img/capas/<?=$value['capas'] ?>" alt="Capa_Manga" class="foto-produto">
+
+        <img src="./assets/img/manga/<?=$value['capas'] ?>" alt="Capa_Manga" class="foto-produto">
         <figcaption>
             <h4><?= $value['titulo'] ?></h4>
             <span class="status"><?= ucfirst($value['status']) ?></span>
