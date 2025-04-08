@@ -1,19 +1,23 @@
-document.addEventListener('DOMContentLoaded', function() {
-    
-    // Elementos
-    const overlay = document.getElementById('overlay');
-    const btnAbrir = document.getElementById('abrirOverlay');
-    const btnFechar = document.querySelector('.fechar');
-    
+document.addEventListener("DOMContentLoaded", function () {
     // Abrir overlay
-    btnAbrir.addEventListener('click', function(e) {
-        e.preventDefault()
-        overlay.style.display = 'flex';
+    document.querySelectorAll(".abrirOverlay").forEach((btn) => {
+        btn.addEventListener("click", () => {
+            const card = btn.closest(".plano_card");
+            const overlay = card.querySelector(".overlay");
+
+            if (overlay) {
+                overlay.style.bottom = "0";
+            }
+        });
     });
-    
+
     // Fechar overlay
-    btnFechar.addEventListener('click', function(e) {
-        e.preventDefault()
-        overlay.style.display = 'none';
+    document.querySelectorAll(".fecharOverlay").forEach((btn) => {
+        btn.addEventListener("click", () => {
+            const overlay = btn.closest(".overlay");
+            if (overlay) {
+                overlay.style.bottom = "-100%";
+            }
+        });
     });
 });
