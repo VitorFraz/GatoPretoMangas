@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+
+.card-manga {
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 12px;
+  padding: 10px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card-manga:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.2);
+}
+
+.card-manga figure {
+  margin: 0;
+}
+
+.card-manga img {
+  width: 100%;
+  border-radius: 8px;
+  display: block;
+}
+
+.card-manga h4 {
+  margin-top: 10px;
+  font-size: 1.1rem;
+  color: #111;
+}
+
+.card-manga .status {
+  display: block;
+  font-weight: bold;
+  color: #555;
+  font-size: 0.9rem;
+}
+
+.card-manga .sinopse {
+  font-size: 0.85rem;
+  color: #444;
+  margin-top: 5px;
+}
