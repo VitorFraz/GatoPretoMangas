@@ -6,10 +6,10 @@
 
 
 if (isset($_GET['id']) && !empty($_GET['id'])) {
-    $filmes = new Mangas();
+    $mangas = new Mangas();
     $generos = new Generos();
 
-    $dados = $filmes->consultarMangasById($_GET['id']);
+    $dados = $mangas->consultarMangasById($_GET['id']);
     $dadosGeneros = $generos->consultarGeneroByIdManga($_GET['id']);
 
     include './includes/mangas_detalhe.php';
