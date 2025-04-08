@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 08/04/2025 às 21:12
+-- Tempo de geração: 08/04/2025 às 21:51
 -- Versão do servidor: 10.4.32-MariaDB
 -- Versão do PHP: 8.2.12
 
@@ -203,27 +203,27 @@ CREATE TABLE `tb_generos` (
 --
 
 INSERT INTO `tb_generos` (`id`, `nome`, `classificacao_etaria`, `cor`) VALUES
-(1, 'Shonen', '+14', '#FFFF00'),
-(2, 'Shounen Ai', '+16', '#FF0000'),
-(3, 'Shojo', '+14', '#FFFF00'),
-(4, 'Shoujo Ai', '+16', '#FF0000'),
-(5, 'Yaoi', '+18', '#000000'),
-(6, 'Isekai', '+16', '#FF0000'),
-(7, 'Kodomomuke', 'Livre', '#00FF00'),
-(8, 'Slice of Life', '+14', '#FFFF00'),
-(9, 'Seinen', '+16', '#FF0000'),
-(10, 'Mecha', '+14', '#FFFF00'),
-(11, 'Josei', '+16', '#FF0000'),
-(12, 'Yuri', '+18', '#000000'),
-(13, 'Iyashikei', 'Livre', '#00FF00'),
-(14, 'Idol', '+14', '#FFFF00'),
-(15, 'Ecchi', '+18', '#000000'),
-(16, 'Harem', '+16', '#FF0000'),
-(17, 'Reverse Harem', '+16', '#FF0000'),
-(18, 'Youkai', '+16', '#FF0000'),
-(19, 'Doujinshi', '+18', '#000000'),
-(20, 'One Shot', '+14', '#FFFF00'),
-(21, 'Hentai', '+18', '#000000');
+(1, 'Shonen', '+14', 'FFFF00'),
+(2, 'Shounen Ai', '+16', 'FF0000'),
+(3, 'Shojo', '+14', 'FFFF00'),
+(4, 'Shoujo Ai', '+16', 'FF0000'),
+(5, 'Yaoi', '+18', '000000'),
+(6, 'Isekai', '+16', 'FF0000'),
+(7, 'Kodomomuke', 'Livre', '00FF00'),
+(8, 'Slice of Life', '+14', 'FFFF00'),
+(9, 'Seinen', '+16', 'FF0000'),
+(10, 'Mecha', '+14', 'FFFF00'),
+(11, 'Josei', '+16', 'FF0000'),
+(12, 'Yuri', '+18', '000000'),
+(13, 'Iyashikei', 'Livre', '00FF00'),
+(14, 'Idol', '+14', 'FFF000'),
+(15, 'Ecchi', '+18', '000000'),
+(16, 'Harem', '+16', 'FF0000'),
+(17, 'Reverse Harem', '+16', 'FF0000'),
+(18, 'Youkai', '+16', 'FF0000'),
+(19, 'Doujinshi', '+18', '000000'),
+(20, 'One Shot', '+14', 'FFFF00'),
+(21, 'Hentai', '+18', '000000');
 
 -- --------------------------------------------------------
 

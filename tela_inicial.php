@@ -9,7 +9,7 @@ include './includes/carrossel.php';
 include_once('classes/Mangas.php');
 
 $mangas = new Mangas();
-$dadosMangas = $mangas -> exibirListarMangas(50);
+$dadosMangas = $mangas -> exibirListarMangas(8);
 
 //$genero = new Generos();
 
