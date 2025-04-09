@@ -26,6 +26,7 @@ try {
         session_start();
         $_SESSION['cliente_id'] = $cliente['id'];
         $_SESSION['cliente_email'] = $cliente['email'];
+        $_SESSION['nome'] = $cliente['nome']; // agora deve funcionar ✅
 
         // 🔁 Caminho relativo ao diretório do seu projeto
         header("Location: ./listarmangas.php");

@@ -12,14 +12,11 @@ if (isset($_GET['id']) && !empty($_GET['id'])) {
     $dados = $mangas->consultarMangasById($_GET['id']);
     $dadosGeneros = $generos->consultarGeneroByIdManga($_GET['id']);
 
-    $dados = $mangas->consultarMangasById($_GET['id']);
-    $dadosGeneros = $generos->consultarGeneroByIdManga($_GET['id']);
-
     include './includes/mangas_detalhe.php';
 } else {
     header('location:index.php');
 }
 
-include_once './includes/footer.php'
+include_once './includes/footer.php';
 
 ?>

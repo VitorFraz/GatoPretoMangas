@@ -5,10 +5,10 @@
             <div class="col-md-3">
                 <h5 class="font-weight-bold">MENU</h5>
                 <ul class="list-unstyled mt-3">
-                    <li><a href="./tela_inicial.php">Inicio</a></li>
-                    <li><a href="./listarmangas.php">Mangás</a></li>
-                    <li><a href="./listarmangas.php">Lançamentos</a></li>
-                    <li><a href="./listarmangas.php">Data de estreia</a></li>
+                    <li><a href="./index.php">Inicio</a></li>
+                    <li><a href="./index.php">Mangás</a></li>
+                    <li><a href="./index.php">Lançamentos</a></li>
+                    <li><a href="./index.php">Data de estreia</a></li>
                 </ul>
             </div>
 
@@ -48,6 +48,55 @@
     </main>
 </footer>
 
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+    const inputBusca = document.getElementById('busca');
+    const sugestoes = document.getElementById('sugestoes');
+    let cliqueEmSugestao = false;
+
+    inputBusca.addEventListener('input', function () {
+        const termo = inputBusca.value.trim();
+        if (termo.length < 2) {
+            sugestoes.innerHTML = '';
+            return;
+        }
+
+        fetch('?autocomplete=' + encodeURIComponent(termo))
+            .then(res => res.json())
+            .then(data => {
+                sugestoes.innerHTML = '';
+                data.forEach(obj => {
+                    const item = document.createElement('li');
+                    item.className = 'list-group-item list-group-item-action';
+                    item.textContent = obj.titulo;
+                    item.style.cursor = 'pointer';
+                    item.onclick = () => {
+                        cliqueEmSugestao = true;
+                        window.location.href = 'mangas-consultar.php?id=' + obj.id;
+                    };
+                    sugestoes.appendChild(item);
+                });
+            });
+    });
+
+    // Evita submit do formulário se clicou numa sugestão
+    const form = inputBusca.closest("form");
+    form.addEventListener("submit", function (e) {
+        if (cliqueEmSugestao) {
+            e.preventDefault();
+            cliqueEmSugestao = false;
+        }
+    });
+
+    document.addEventListener('click', function (e) {
+        if (!sugestoes.contains(e.target) && e.target !== inputBusca) {
+            sugestoes.innerHTML = '';
+        }
+    });
+});
+</script>
+</script>
 
 </body>
 

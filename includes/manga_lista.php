@@ -1,5 +1,4 @@
 <section id="mangas_recomendados">
-    <h2 class="titulo">Mangás</h2>
     <main class="container">
         <div class="row">
             

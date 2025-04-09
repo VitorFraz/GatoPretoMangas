@@ -14,6 +14,11 @@
             </div>
             <div class="card-content">
                 <div class="card-content-area">
+                    <label for="nome">Nome</label>
+                    <input type="nome" id="nome" name="nome" required>
+                </div>
+            <div class="card-content">
+                <div class="card-content-area">
                     <label for="email">Email</label>
                     <input type="email" id="email" name="email" required>
                 </div>

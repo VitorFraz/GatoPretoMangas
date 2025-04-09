@@ -2,12 +2,15 @@
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
 
 .card-manga {
-  background-color: rgba(255, 255, 255, 0.9);
+  background-color: rgba(255, 255, 255, 0.95);
   border-radius: 12px;
-  padding: 10px;
+  padding: 12px;
   margin-bottom: 20px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.1);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
+  max-width: 250px;            /* controla o tamanho do card */
+  margin: 10px auto;           /* centraliza e dá espaço entre os cards */
+  height: 100%;
 }
 
 .card-manga:hover {
@@ -21,6 +24,7 @@
 
 .card-manga img {
   width: 100%;
+  height: auto;
   border-radius: 8px;
   display: block;
 }
@@ -29,6 +33,7 @@
   margin-top: 10px;
   font-size: 1.1rem;
   color: #111;
+  text-align: center;
 }
 
 .card-manga .status {
@@ -36,10 +41,12 @@
   font-weight: bold;
   color: #555;
   font-size: 0.9rem;
+  text-align: center;
 }
 
 .card-manga .sinopse {
   font-size: 0.85rem;
   color: #444;
   margin-top: 5px;
+  text-align: justify;
 }

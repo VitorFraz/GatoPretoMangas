@@ -1,27 +1,3 @@
-<?php
-require './classes/Mangas.php';
-
-$manga = new Mangas();
-$dadosMangas = $manga->exibirListarMangas();
-?>
-
-<div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
-  <div class="carousel-inner">
-    <?php foreach ($dadosMangas as $index => $m): ?>
-      <div class="carousel-item <?= $index === 0 ? 'active' : '' ?>">
-        <a href="listarmangas.php?id=<?= $m['id_manga'] ?>">
-          <img src="<?= $m['imagem'] ?>" class="d-block w-100" alt="<?= htmlspecialchars($m['titulo']) ?>">
-        </a>
-      </div>
-    <?php endforeach; ?>
-  </div>
-  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-  </button>
-</div>
 
 <!DOCTYPE html>
 <html lang="pt-br">

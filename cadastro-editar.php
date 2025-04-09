@@ -14,6 +14,7 @@ try {
     $cpf = $_POST['cpf'];
     $senha = $_POST['senha'];
     $confirmar_senha = $_POST['confirmar_senha'];
+    $nome = $_POST['nome'];
 
     // Validação simples
     if ($senha !== $confirmar_senha) {
@@ -22,12 +23,13 @@ try {
     }
 
     // Insere no banco (sem criptografar a senha)
-    $sql = "INSERT INTO tb_clientes (email, telefone, cpf, senha) VALUES (:email, :telefone, :cpf, :senha)";
+    $sql = "INSERT INTO tb_clientes (email, telefone, cpf, senha, nome) VALUES (:email, :telefone, :cpf, :senha, :nome)";
     $stmt = $pdo->prepare($sql);
     $stmt->bindParam(':email', $email);
     $stmt->bindParam(':telefone', $telefone);
     $stmt->bindParam(':cpf', $cpf);
-    $stmt->bindParam(':senha', $senha); // senha em texto puro
+    $stmt->bindParam(':senha', $senha); 
+    $stmt->bindParam(':nome', $nome);
 
     $stmt->execute();
 

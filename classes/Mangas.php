@@ -24,12 +24,10 @@ class Mangas
         return $this->conexaoBanco->query($script)->fetchAll();
     }
 
-    public function buscarPorId($id_manga) {
-        $script = "SELECT * FROM tb_mangas WHERE id_manga = :id";
-        $stmt = $this->conexaoBanco->prepare($script);
-        $stmt->bindParam(':id', $id_manga, PDO::PARAM_INT);
-        $stmt->execute();
-        return $stmt->fetch(PDO::FETCH_ASSOC);
+    public function consultarMangasById($id_manga) {
+
+        $script = "SELECT * FROM tb_mangas WHERE id = {$id_manga}";
+        
+        return $this->conexaoBanco->query($script)->fetch();
     }
-    
 }
