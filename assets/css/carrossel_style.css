@@ -13,14 +13,20 @@ body {
 
 .carrossel {
     display: flex;
-    transition: transform 0.5s ease; /* Transição suave */
+    transition: transform 0.5s ease;
     width: max-content;
 }
 
 .carrossel img {
-    width: 250px; /* Tamanho fixo das imagens */
+    width: 250px;
     height: 400px;
-    margin-right: 5px;
-    margin-left: 5px;
-    margin-bottom: 10px;
+    margin: 0 5px 10px 5px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 10px;
+}
+
+.carrossel img:hover {
+    transform: translateY(-10px) scale(1.05);
+    box-shadow: 0 10px 20px rgba(255, 255, 255, 0.1);
+    cursor: pointer;
 }

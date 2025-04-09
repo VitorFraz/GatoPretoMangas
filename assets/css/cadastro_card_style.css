@@ -18,14 +18,12 @@ body {
     justify-content: center;
     height: 100vh;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-}
-
-.card {
     background-color: rgba(224, 224, 224, 0.7);
     padding: 25px;
     border-radius: 20px;
     width:280px;
 }
+
 
 .card-header {
     padding-bottom: 30px ;
