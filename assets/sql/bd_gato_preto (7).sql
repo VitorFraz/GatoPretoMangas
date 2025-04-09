@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 08/04/2025 às 21:51
+-- Tempo de geração: 09-Abr-2025 às 14:17
 -- Versão do servidor: 10.4.32-MariaDB
--- Versão do PHP: 8.2.12
+-- versão do PHP: 8.2.12
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -24,7 +24,7 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Estrutura para tabela `tb_assinantes`
+-- Estrutura da tabela `tb_assinantes`
 --
 
 CREATE TABLE `tb_assinantes` (
@@ -40,7 +40,7 @@ CREATE TABLE `tb_assinantes` (
 -- --------------------------------------------------------
 
 --
--- Estrutura para tabela `tb_assinates`
+-- Estrutura da tabela `tb_assinates`
 --
 
 CREATE TABLE `tb_assinates` (
@@ -59,7 +59,7 @@ CREATE TABLE `tb_assinates` (
 -- --------------------------------------------------------
 
 --
--- Estrutura para tabela `tb_autores`
+-- Estrutura da tabela `tb_autores`
 --
 
 CREATE TABLE `tb_autores` (
@@ -68,7 +68,7 @@ CREATE TABLE `tb_autores` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
--- Despejando dados para a tabela `tb_autores`
+-- Extraindo dados da tabela `tb_autores`
 --
 
 INSERT INTO `tb_autores` (`id`, `nome`) VALUES
@@ -167,28 +167,29 @@ INSERT INTO `tb_autores` (`id`, `nome`) VALUES
 -- --------------------------------------------------------
 
 --
--- Estrutura para tabela `tb_clientes`
+-- Estrutura da tabela `tb_clientes`
 --
 
 CREATE TABLE `tb_clientes` (
   `id` int(11) NOT NULL,
-  `nome` varchar(200) NOT NULL,
-  `dataNascimento` date DEFAULT NULL,
   `email` varchar(150) NOT NULL,
   `telefone` varchar(15) DEFAULT NULL,
-  `endereco` varchar(255) DEFAULT NULL,
-  `cidade` varchar(100) DEFAULT NULL,
-  `estado` varchar(50) DEFAULT NULL,
-  `cep` varchar(10) DEFAULT NULL,
-  `pais` varchar(50) DEFAULT NULL,
   `cpf` varchar(11) NOT NULL,
-  `senha` varchar(255) DEFAULT NULL
+  `senha` varchar(255) DEFAULT NULL,
+  `nome` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Extraindo dados da tabela `tb_clientes`
+--
+
+INSERT INTO `tb_clientes` (`id`, `email`, `telefone`, `cpf`, `senha`, `nome`) VALUES
+(4, 'walmirdd@gmail.com', '65981187495', '05684542190', '@n@.2021', 'Walmir Sousa');
 
 -- --------------------------------------------------------
 
 --
--- Estrutura para tabela `tb_generos`
+-- Estrutura da tabela `tb_generos`
 --
 
 CREATE TABLE `tb_generos` (
@@ -199,7 +200,7 @@ CREATE TABLE `tb_generos` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
--- Despejando dados para a tabela `tb_generos`
+-- Extraindo dados da tabela `tb_generos`
 --
 
 INSERT INTO `tb_generos` (`id`, `nome`, `classificacao_etaria`, `cor`) VALUES
@@ -228,7 +229,7 @@ INSERT INTO `tb_generos` (`id`, `nome`, `classificacao_etaria`, `cor`) VALUES
 -- --------------------------------------------------------
 
 --
--- Estrutura para tabela `tb_mangas`
+-- Estrutura da tabela `tb_mangas`
 --
 
 CREATE TABLE `tb_mangas` (
@@ -245,7 +246,7 @@ CREATE TABLE `tb_mangas` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
--- Despejando dados para a tabela `tb_mangas`
+-- Extraindo dados da tabela `tb_mangas`
 --
 
 INSERT INTO `tb_mangas` (`id`, `titulo`, `genero`, `ano_de_lancamento`, `status`, `capitulos`, `classificacao_indicativa`, `sinopse`, `autor`, `capas`) VALUES
@@ -352,7 +353,7 @@ INSERT INTO `tb_mangas` (`id`, `titulo`, `genero`, `ano_de_lancamento`, `status`
 -- --------------------------------------------------------
 
 --
--- Estrutura para tabela `tb_manga_autor`
+-- Estrutura da tabela `tb_manga_autor`
 --
 
 CREATE TABLE `tb_manga_autor` (
@@ -362,7 +363,7 @@ CREATE TABLE `tb_manga_autor` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
--- Despejando dados para a tabela `tb_manga_autor`
+-- Extraindo dados da tabela `tb_manga_autor`
 --
 
 INSERT INTO `tb_manga_autor` (`id`, `manga_id`, `autor_id`) VALUES
@@ -469,7 +470,7 @@ INSERT INTO `tb_manga_autor` (`id`, `manga_id`, `autor_id`) VALUES
 -- --------------------------------------------------------
 
 --
--- Estrutura para tabela `tb_manga_genero`
+-- Estrutura da tabela `tb_manga_genero`
 --
 
 CREATE TABLE `tb_manga_genero` (
@@ -479,7 +480,7 @@ CREATE TABLE `tb_manga_genero` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
--- Despejando dados para a tabela `tb_manga_genero`
+-- Extraindo dados da tabela `tb_manga_genero`
 --
 
 INSERT INTO `tb_manga_genero` (`id`, `id_manga`, `id_genero`) VALUES
@@ -586,7 +587,7 @@ INSERT INTO `tb_manga_genero` (`id`, `id_manga`, `id_genero`) VALUES
 -- --------------------------------------------------------
 
 --
--- Estrutura para tabela `tb_usuario`
+-- Estrutura da tabela `tb_usuario`
 --
 
 CREATE TABLE `tb_usuario` (
@@ -606,7 +607,7 @@ CREATE TABLE `tb_usuario` (
 --
 
 --
--- Índices de tabela `tb_assinantes`
+-- Índices para tabela `tb_assinantes`
 --
 ALTER TABLE `tb_assinantes`
   ADD PRIMARY KEY (`id`),
@@ -614,7 +615,7 @@ ALTER TABLE `tb_assinantes`
   ADD KEY `fk_assinante_cliente` (`cliente_id`);
 
 --
--- Índices de tabela `tb_assinates`
+-- Índices para tabela `tb_assinates`
 --
 ALTER TABLE `tb_assinates`
   ADD PRIMARY KEY (`id`),
@@ -622,13 +623,13 @@ ALTER TABLE `tb_assinates`
   ADD KEY `fk_assinate_cliente` (`cliente_id`);
 
 --
--- Índices de tabela `tb_autores`
+-- Índices para tabela `tb_autores`
 --
 ALTER TABLE `tb_autores`
   ADD PRIMARY KEY (`id`);
 
 --
--- Índices de tabela `tb_clientes`
+-- Índices para tabela `tb_clientes`
 --
 ALTER TABLE `tb_clientes`
   ADD PRIMARY KEY (`id`),
@@ -636,19 +637,19 @@ ALTER TABLE `tb_clientes`
   ADD UNIQUE KEY `cpf` (`cpf`) USING BTREE;
 
 --
--- Índices de tabela `tb_generos`
+-- Índices para tabela `tb_generos`
 --
 ALTER TABLE `tb_generos`
   ADD PRIMARY KEY (`id`);
 
 --
--- Índices de tabela `tb_mangas`
+-- Índices para tabela `tb_mangas`
 --
 ALTER TABLE `tb_mangas`
   ADD PRIMARY KEY (`id`);
 
 --
--- Índices de tabela `tb_manga_autor`
+-- Índices para tabela `tb_manga_autor`
 --
 ALTER TABLE `tb_manga_autor`
   ADD PRIMARY KEY (`id`),
@@ -656,7 +657,7 @@ ALTER TABLE `tb_manga_autor`
   ADD KEY `autor_id` (`autor_id`);
 
 --
--- Índices de tabela `tb_manga_genero`
+-- Índices para tabela `tb_manga_genero`
 --
 ALTER TABLE `tb_manga_genero`
   ADD PRIMARY KEY (`id`),
@@ -664,13 +665,13 @@ ALTER TABLE `tb_manga_genero`
   ADD KEY `id_genero` (`id_genero`);
 
 --
--- Índices de tabela `tb_usuario`
+-- Índices para tabela `tb_usuario`
 --
 ALTER TABLE `tb_usuario`
   ADD PRIMARY KEY (`id`);
 
 --
--- AUTO_INCREMENT para tabelas despejadas
+-- AUTO_INCREMENT de tabelas despejadas
 --
 
 --
@@ -695,7 +696,7 @@ ALTER TABLE `tb_autores`
 -- AUTO_INCREMENT de tabela `tb_clientes`
 --
 ALTER TABLE `tb_clientes`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- AUTO_INCREMENT de tabela `tb_manga_autor`
@@ -716,32 +717,32 @@ ALTER TABLE `tb_usuario`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
--- Restrições para tabelas despejadas
+-- Restrições para despejos de tabelas
 --
 
 --
--- Restrições para tabelas `tb_assinantes`
+-- Limitadores para a tabela `tb_assinantes`
 --
 ALTER TABLE `tb_assinantes`
   ADD CONSTRAINT `fk_assinante_cliente` FOREIGN KEY (`cliente_id`) REFERENCES `tb_clientes` (`id`) ON DELETE CASCADE ON UPDATE CASCADE,
   ADD CONSTRAINT `fk_assinante_usuario` FOREIGN KEY (`usuario_id`) REFERENCES `tb_usuario` (`id`) ON DELETE CASCADE ON UPDATE CASCADE;
 
 --
--- Restrições para tabelas `tb_assinates`
+-- Limitadores para a tabela `tb_assinates`
 --
 ALTER TABLE `tb_assinates`
   ADD CONSTRAINT `fk_assinate_cliente` FOREIGN KEY (`cliente_id`) REFERENCES `tb_clientes` (`id`) ON DELETE CASCADE ON UPDATE CASCADE,
   ADD CONSTRAINT `fk_assinate_usuario` FOREIGN KEY (`usuario_id`) REFERENCES `tb_usuario` (`id`) ON DELETE CASCADE ON UPDATE CASCADE;
 
 --
--- Restrições para tabelas `tb_manga_autor`
+-- Limitadores para a tabela `tb_manga_autor`
 --
 ALTER TABLE `tb_manga_autor`
   ADD CONSTRAINT `tb_manga_autor_ibfk_1` FOREIGN KEY (`manga_id`) REFERENCES `tb_mangas` (`id`),
   ADD CONSTRAINT `tb_manga_autor_ibfk_2` FOREIGN KEY (`autor_id`) REFERENCES `tb_autores` (`id`);
 
 --
--- Restrições para tabelas `tb_manga_genero`
+-- Limitadores para a tabela `tb_manga_genero`
 --
 ALTER TABLE `tb_manga_genero`
   ADD CONSTRAINT `tb_manga_genero_ibfk_1` FOREIGN KEY (`id_manga`) REFERENCES `tb_mangas` (`id`),
