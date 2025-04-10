@@ -1,138 +1,126 @@
 <?php
-if (session_status() === PHP_SESSION_NONE) {
-    session_start();
+session_start();
+
+if (!isset($_SESSION['cliente_id'])) {
+    header("Location: tela_login.php");
+    exit;
 }
-?>
 
-<!DOCTYPE html>
-<html lang="pt-br">
+$dsn = 'mysql:host=127.0.0.1;dbname=bd_gato_preto';
+$user = 'root';
+$password = '';
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><?= isset($titulo) ? $titulo : 'Gato Preto Mangás' ?></title>
+try {
+    $pdo = new PDO($dsn, $user, $password);
+    $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    $id = $_SESSION['cliente_id'];
+    $erro = '';
 
-    <!-- Bootstrap Icons -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
-
-    <!-- Estilos personalizados -->
-    <link rel="stylesheet" href="./assets/css/style.css">
-    <link rel="stylesheet" href="./assets/css/manga_cards.css">
-</head>
-
-<body>
-    <header>
-        <div class="header d-flex align-items-center justify-content-between px-4 py-3 bg-dark text-white">
-            <!-- Logo -->
-            <div class="logo d-flex align-items-center">
-                <a href="./tela_inicial.php" class="d-flex align-items-center text-white text-decoration-none">
-                    <img src="./assets/img/possivellogo.jpg" alt="Logo" style="height: 40px; margin-right: 10px;">
-                    <span class="fs-5">Gato Preto Mangás</span>
-                </a>
-            </div>
-
-            <!-- Navegação -->
-            <nav class="d-flex gap-3">
-                <a href="index.php" class="text-white text-decoration-none">Novidades</a>
-                <a href="index.php" class="text-white text-decoration-none">Popular</a>
-                <a href="index.php" class="text-white text-decoration-none">Favoritos</a>
-                <a href="index.php" class="text-white text-decoration-none">Categorias</a>
-                <a href="listarmangas.php" class="text-white text-decoration-none">Mangás</a>
-            </nav>
-
-            <!-- Busca -->
-            <div class="search-container">
-            <form class="d-flex position-relative" action="listarmangas.php" method="GET" role="search">
-    <input class="form-control me-2" type="search" name="busca" id="busca" placeholder="Pesquisar..." autocomplete="off">
-    <button class="btn btn-outline-light" type="submit"><i class="bi bi-search"></i></button>
-    <ul id="sugestoes" class="list-group position-absolute w-100" style="top: 100%; z-index: 1000;"></ul>
-</form>
-            </div>
-
-            <!-- Ícone ou nome do usuário -->
-            <div class="ms-3 d-flex align-items-center gap-3">
-            <?php if (isset($_SESSION['nome'])): ?>
-    <div class="d-flex align-items-center gap-2">
-        <a href="meus_dados.php" class="text-white text-decoration-none">
-            Olá, <?= htmlspecialchars($_SESSION['nome']) ?>
-        </a>
-        <a href="logout.php" class="btn btn-outline-light btn-sm">Sair</a>
-    </div>
-<?php else: ?>
-    <a href="./tela_login.php" class="text-white text-decoration-none">
-        <i class="bi bi-person fs-4"></i>
-    </a>
-<?php endif; ?>
-</div>
-
-
-
-</div>
-    </header>
-
-    <!-- Script do Bootstrap -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-
-    <script>
-document.addEventListener("DOMContentLoaded", function () {
-    const inputBusca = document.getElementById('busca');
-    const sugestoes = document.getElementById('sugestoes');
-
-    inputBusca.addEventListener('input', function () {
-        const termo = inputBusca.value.trim();
-        if (termo.length < 2) {
-            sugestoes.innerHTML = '';
-            return;
-        }
-
-        // Requisição via fetch pra ele mesmo
-        fetch('?autocomplete=' + encodeURIComponent(termo))
-            .then(res => res.json())
-            .then(data => {
-                sugestoes.innerHTML = '';
-                data.forEach(titulo => {
-                    const item = document.createElement('li');
-                    item.className = 'list-group-item list-group-item-action';
-                    item.textContent = titulo;
-                    item.style.cursor = 'pointer';
-                    item.onclick = () => {
-                        inputBusca.value = titulo;
-                        sugestoes.innerHTML = '';
-                    };
-                    sugestoes.appendChild(item);
-                });
-            });
-    });
-
-    document.addEventListener('click', function (e) {
-        if (!sugestoes.contains(e.target) && e.target !== inputBusca) {
-            sugestoes.innerHTML = '';
-        }
-    });
-});
-</script>
-
-<?php
-// ⚠️ Requisição AJAX via GET usando ?autocomplete=...
-if (isset($_GET['autocomplete'])) {
-    header('Content-Type: application/json');
-
-    $termo = $_GET['autocomplete'];
-
-    try {
-        $pdo = new PDO('mysql:host=127.0.0.1;dbname=bd_gato_preto', 'root', '');
-        $stmt = $pdo->prepare("SELECT id, titulo FROM tb_mangas WHERE titulo LIKE :termo LIMIT 10");
-$stmt->execute([':termo' => "%$termo%"]);
-$mangas = $stmt->fetchAll(PDO::FETCH_ASSOC);
-echo json_encode($mangas);
-
-    } catch (PDOException $e) {
-        echo json_encode([]);
+    // Processar exclusão da conta
+    if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['excluir_conta'])) {
+        $stmt = $pdo->prepare("DELETE FROM tb_clientes WHERE id = :id");
+        $stmt->bindParam(':id', $id, PDO::PARAM_INT);
+        $stmt->execute();
+        session_destroy();
+        header("Location: tela_inicial.php");
+        exit;
     }
 
-    exit; // para não carregar o resto do HTML
+    // Atualizar dados do usuário
+    if ($_SERVER['REQUEST_METHOD'] === 'POST' && !isset($_POST['excluir_conta'])) {
+        $nome = $_POST['nome'];
+        $email = $_POST['email'];
+        $telefone = $_POST['telefone'];
+        $senha = $_POST['senha'];
+        $confirmar_senha = $_POST['confirmar_senha'];
+
+        if (!empty($senha) && $senha !== $confirmar_senha) {
+            $erro = "As senhas não coincidem!";
+        } else {
+            if (!empty($senha)) {
+                $stmt = $pdo->prepare("UPDATE tb_clientes SET nome = :nome, email = :email, telefone = :telefone, senha = :senha WHERE id = :id");
+                $stmt->bindParam(':senha', $senha);
+            } else {
+                $stmt = $pdo->prepare("UPDATE tb_clientes SET nome = :nome, email = :email, telefone = :telefone WHERE id = :id");
+            }
+
+            $stmt->bindParam(':nome', $nome);
+            $stmt->bindParam(':email', $email);
+            $stmt->bindParam(':telefone', $telefone);
+            $stmt->bindParam(':id', $id);
+
+            if ($stmt->execute()) {
+                $_SESSION['nome'] = $nome;
+                header(header: "Location: editar_dados.php?msg=atualizado");
+                exit;
+            } else {
+                $erro = "Erro ao atualizar os dados!";
+            }
+        }
+    }
+
+    $stmt = $pdo->prepare("SELECT * FROM tb_clientes WHERE id = :id");
+    $stmt->bindParam(':id', $id);
+    $stmt->execute();
+    $usuario = $stmt->fetch(PDO::FETCH_ASSOC);
+
+    if (!$usuario) {
+        echo "Usuário não encontrado!";
+        exit;
+    }
+
+} catch (PDOException $e) {
+    echo "Erro ao conectar com o banco: " . $e->getMessage();
+    exit;
 }
 ?>
+
+<?php include 'includes/header.php'; ?>
+
+<?php if (isset($_GET['msg']) && $_GET['msg'] === 'atualizado'): ?>
+<script>
+    alert('Dados atualizados com sucesso!');
+    window.location.href = 'tela_inicial.php';
+</script>
+<?php endif; ?>
+
+<div class="container mt-5">
+    <h2 class="mb-4">Editar Meus Dados</h2>
+
+    <?php if (!empty($erro)): ?>
+        <div class="alert alert-danger"><?= htmlspecialchars($erro) ?></div>
+    <?php endif; ?>
+
+    <form method="POST">
+        <div class="mb-3">
+            <label for="nome" class="form-label">Nome:</label>
+            <input type="text" name="nome" id="nome" class="form-control" value="<?= htmlspecialchars($usuario['nome']) ?>" required>
+        </div>
+        <div class="mb-3">
+            <label for="email" class="form-label">Email:</label>
+            <input type="email" name="email" id="email" class="form-control" value="<?= htmlspecialchars($usuario['email']) ?>" required>
+        </div>
+        <div class="mb-3">
+            <label for="telefone" class="form-label">Telefone:</label>
+            <input type="text" name="telefone" id="telefone" class="form-control" value="<?= htmlspecialchars($usuario['telefone']) ?>">
+        </div>
+        <div class="mb-3">
+            <label for="senha" class="form-label">Nova Senha:</label>
+            <input type="password" name="senha" id="senha" class="form-control">
+        </div>
+        <div class="mb-3">
+            <label for="confirmar_senha" class="form-label">Confirmar Senha:</label>
+            <input type="password" name="confirmar_senha" id="confirmar_senha" class="form-control">
+        </div>
+        <button type="submit" class="btn btn-success">Salvar Alterações</button>
+        <a href="tela_inicial.php" class="btn btn-secondary">Cancelar</a>
+    </form>
+
+    <form method="POST" onsubmit="return confirm('Tem certeza que deseja excluir sua conta? Esta ação não pode ser desfeita.');" class="mt-3">
+        <input type="hidden" name="excluir_conta" value="1">
+        <button type="submit" class="btn btn-danger">Excluir Conta</button>
+    </form>
+</div>
+
+<?php include 'includes/footer.php'; ?>
