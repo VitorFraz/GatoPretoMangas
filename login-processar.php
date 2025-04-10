@@ -3,9 +3,10 @@ ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
 
-$dsn = 'mysql:host=127.0.0.1;dbname=bd_gato_preto';
-$user = 'root';
-$password = '';
+$dsn = 'mysql:dbname=bd_gato_preto;host=127.0.0.1';
+    $user = 'root';
+    $password = '';
+
 
 try {
     $pdo = new PDO($dsn, $user, $password);
@@ -26,9 +27,9 @@ try {
         session_start();
         $_SESSION['cliente_id'] = $cliente['id'];
         $_SESSION['cliente_email'] = $cliente['email'];
-        $_SESSION['nome'] = $cliente['nome']; // agora deve funcionar ✅
+        $_SESSION['nome'] = $cliente['nome'];
+        $_SESSION['usuario'] = $cliente['email']; // ✅ ESSENCIAL PARA FUNCIONAR COM mangas_detalhes
 
-        // 🔁 Caminho relativo ao diretório do seu projeto
         header("Location: ./listarmangas.php");
         exit;
     } else {

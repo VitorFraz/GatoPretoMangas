@@ -7,9 +7,9 @@ if (!isset($_SESSION['cliente_id'])) {
     exit;
 }
 
-$dsn = 'mysql:host=127.0.0.1;dbname=bd_gato_preto';
-$user = 'root';
-$password = '';
+$dsn = 'mysql:dbname=bd_gato_preto;host=127.0.0.1';
+    $user = 'root';
+    $password = '';
 
 try {
     $pdo = new PDO($dsn, $user, $password);
@@ -18,18 +18,7 @@ try {
     $id = $_SESSION['cliente_id'];
     $erro = '';
 
-    // Processar exclusão da conta
-    if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['excluir_conta'])) {
-        $stmt = $pdo->prepare("DELETE FROM tb_clientes WHERE id = :id");
-        $stmt->bindParam(':id', $id, PDO::PARAM_INT);
-        $stmt->execute();
-        session_destroy();
-        header("Location: tela_inicial.php");
-        exit;
-    }
-
-    // Atualizar dados do usuário
-    if ($_SERVER['REQUEST_METHOD'] === 'POST' && !isset($_POST['excluir_conta'])) {
+    if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $nome = $_POST['nome'];
         $email = $_POST['email'];
         $telefone = $_POST['telefone'];
@@ -53,8 +42,8 @@ try {
 
             if ($stmt->execute()) {
                 $_SESSION['nome'] = $nome;
-                echo "<script>alert('Dados atualizados com sucesso!'); window.location.href = 'tela_inicial.php';</script>";
-                exit;               
+                header("Location: editar_dados.php?msg=atualizado");
+                exit;
             } else {
                 $erro = "Erro ao atualizar os dados!";
             }
@@ -84,6 +73,7 @@ try {
 </script>
 <?php endif; ?>
 
+
 <div class="container mt-5">
     <h2 class="mb-4">Editar Meus Dados</h2>
 
@@ -112,20 +102,9 @@ try {
             <label for="confirmar_senha" class="form-label">Confirmar Senha:</label>
             <input type="password" name="confirmar_senha" id="confirmar_senha" class="form-control">
         </div>
-
-        <div class="d-flex justify-content-between align-items-center">
-            <div>
-                <button type="submit" class="btn btn-success">Salvar Alterações</button>
-                <a href="tela_inicial.php" class="btn btn-secondary">Cancelar</a>
-            </div>
+        <button type="submit" class="btn btn-success">Salvar Alterações</button>
+        <a href="tela_inicial.php" class="btn btn-secondary">Cancelar</a>
     </form>
-
-            <!-- Formulário para exclusão de conta -->
-            <form method="POST" onsubmit="return confirm('Tem certeza que deseja excluir sua conta? Esta ação não pode ser desfeita.');">
-                <input type="hidden" name="excluir_conta" value="1">
-                <button type="submit" class="btn btn-danger">Excluir Conta</button>
-            </form>
-        </div>
 </div>
 
 <?php include 'includes/footer.php'; ?>

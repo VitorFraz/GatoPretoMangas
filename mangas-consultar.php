@@ -1,4 +1,13 @@
 <?php
+if (session_status() === PHP_SESSION_NONE) {
+    session_start();
+}
+?>
+
+
+
+
+<?php
     require './classes/Mangas.php';
     require './classes/Generos.php';
 

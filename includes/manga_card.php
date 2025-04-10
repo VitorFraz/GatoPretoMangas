@@ -12,7 +12,7 @@
             <p class="sinopse"><?= $value['sinopse'] ?></p>
         </figcaption>
         <!-- <span class="genero">
-        
+           
         </span> -->
         </a>
     </figure>

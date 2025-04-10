@@ -1,8 +1,9 @@
 <?php
 // Conexão com o banco
-$dsn = 'mysql:host=127.0.0.1;dbname=bd_gato_preto';
-$user = 'root';
-$password = '';
+$dsn = 'mysql:dbname=bd_gato_preto;host=127.0.0.1';
+    $user = 'root';
+    $password = '';
+
 
 try {
     $pdo = new PDO($dsn, $user, $password);

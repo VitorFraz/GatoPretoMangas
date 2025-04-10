@@ -1,7 +1,8 @@
 <?php
-$dsn = 'mysql:dbname=bd_gato_preto; host=127.0.0.1';
+$dsn = 'mysql:dbname=bd_gato_preto;host=127.0.0.1';
 $user = 'root';
 $password = '';
+
 try {
     // Criando a conexão PDO
     $conn = new PDO($dsn, $username, $password);

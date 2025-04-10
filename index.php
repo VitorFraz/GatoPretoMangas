@@ -4,7 +4,7 @@ require './classes/Mangas.php';
 
 $titulo = 'Gato Preto Mangas - Início';
 include './includes/header.php'; 
-// include './includes/banner.php';\\
+ include './includes/banner.php';
 
 $mangas = new Mangas();
 $dadosMangas = $mangas->exibirListarMangas(24);
