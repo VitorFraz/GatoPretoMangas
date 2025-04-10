@@ -5,7 +5,7 @@ class Mangas
     private $conexaoBanco;
 
     public function __construct() {
-        $dsn = 'mysql:dbname=bd_gato_preto;host=127.0.0.1';
+    $dsn = 'mysql:dbname=bd_gato_preto;host=127.0.0.1';
     $user = 'root';
     $password = '';
 
